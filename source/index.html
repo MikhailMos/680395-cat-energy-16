@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Магазин правильного питания для котов - Cat energy</h1>
+
     <header class="page-header">
 
       <a class="page-header__logo logo" href="#">
@@ -19,20 +21,20 @@
           <li class="main-nav__item"></li>
         </ul>
       </nav>
+
+      <section class="page-header__promo promo">
+        <h2 class="promo__title">Функциональное питание для котов</h2>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo__img" src="http://placehold.it/230x240" width="230" height="240" alt="Корм для кошек в баночке с надписью Курица">
+        <a class="promo__button button" href="#">Подобрать программу</a>
+      </section>
+
     </header>
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">Магазин правильного питания для котов - Cat energy</h1>
-
       <section class="page-main__nutrition nutrition">
-        <header class="nutrition__header">
-          <h2 class="nutrition__title">Функциональное питание для котов</h2>
-          <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
-          <img class="nutrition__img" src="http://placehold.it/230x240" width="230" height="240" alt="Корм для кошек в баночке с надписью Курица">
-          <a class="nutrition__button button" href="#">Подобрать программу</a>
-        </header>
-
+        <h2 class="vissualy-hidden">Правильные диеты</h2>
         <ul class="nutrition__list">
           <li class="nutrition__item nutrition__item--cat-sitting">
             <h3 class="nutrition__title">Похудение</h3>
@@ -59,10 +61,27 @@
 
       <section class="page-main__example example">
         <h2 class="example__title">Живой пример</h2>
-        <!--слайдер с котом и линейкой было-стало-->
+        <p class="example__destination">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+
+        <ul class="example__list">
+          <li class="example__item"><span class="example__text example__text--down">снижение веса</span> 5 кг</li>
+          <li class="example__item"><span class="example__text example__text--down">затрачено времени</span> 60 дней</li>
+        </ul>
+
+        <p class="example__">Затраты на питание: 15 000 руб.</p>
+        <p class="example__paragraph-range range">
+          Было
+          <div class="range__scale">
+            <div class="range__scale-current">
+              <span class="range__slider"></span>
+            </div>
+          </div>
+          Стало
+        </p>
+
       </section>
 
-      <section class="page-main__invitation invitation">
+      <section class="page-main__invitation invitation invitation">
         <h2 class="visually-hidden">Для будущих партнеров</h2>
         <p class="invitation__title">Приглашаем к сотрудничеству дилеров!</p>
         <p class="invitation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
