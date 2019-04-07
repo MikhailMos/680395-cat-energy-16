@@ -1,0 +1,20 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  justify-items: space-between;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  flex-grow: 1;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+}
+
+.page-header__nav {
+  width: 65px;
+  background-color: rgba($color: #b12424, $alpha: 0.3);
+}
+
+.page-header__promo {
+  width: 100%;
+}
