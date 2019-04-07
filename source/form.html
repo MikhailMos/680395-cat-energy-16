@@ -30,7 +30,7 @@
 
           <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <!--Поля формы-->
-          <div class="profile__personal-info">
+          <fieldset class="profile__personal-info">
             <p class="profile__name">
               <label class="profile__name-label field field--required" for="petNameField">Имя:</label>
               <input class="profile__name-input" type="text" name="petName" id="petNameField">
@@ -43,22 +43,24 @@
               <label class="profile__age-label" for="petAgeField">Возвраст (лет):</label>
               <input class="profile__age-input" type="text" name="petAge" id="petAgeField">
             </p>
-          </div>
+          </fieldset>
 
-          <ul class="profile__choice choice">
-            <li class="choice__item">
-              <input class="choice__input choice__input--active" type="radio" name="weightLoss" id="weightLossField">
-              <label class="choice__label" for="weightLossField">Похудение</label>
-            </li>
-            <li class="choice__item">
-              <input class="choice__input" type="radio" name="weightGain" id="weightGainField">
-              <label class="choice__label" for="weightGainField">Набор массы</label>
-            </li>
-            <li class="choice__item">
-              <input class="choice__input" type="radio" name="weightDontKnow" id="weightDontKnowField">
-              <label class="choice__label" for="weightDontKnowField">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
+          <fieldset class="profile__choice">
+            <ul class="choice">
+              <li class="choice__item">
+                <input class="choice__input choice__input--active" type="radio" name="weightLoss" id="weightLossField">
+                <label class="choice__label" for="weightLossField">Похудение</label>
+              </li>
+              <li class="choice__item">
+                <input class="choice__input" type="radio" name="weightGain" id="weightGainField">
+                <label class="choice__label" for="weightGainField">Набор массы</label>
+              </li>
+              <li class="choice__item">
+                <input class="choice__input" type="radio" name="weightDontKnow" id="weightDontKnowField">
+                <label class="choice__label" for="weightDontKnowField">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
 
           <fieldset class="profile__contacts contacts">
             <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
@@ -100,8 +102,8 @@
             </ul>
           </fieldset>
 
-          <button class="profile__button button" type="submit" name="btn-send">Отправить заявку</button>
-          <small class="profile__small-legend profile__small-legend--bottom"><sup>*</sup> — Обязательные поля</small>
+          <button class="profile__button button" name="btn-send">Отправить заявку</button>
+          <p class="profile__small-legend profile__small-legend--bottom"><sup>*</sup> — Обязательные поля</p>
         </form>
 
         <section class="page-main__invitation invitation invitation--grey">
