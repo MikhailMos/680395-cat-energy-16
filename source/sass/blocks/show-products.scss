@@ -1,0 +1,20 @@
+.show-products {
+  border: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+.show-products__title {
+  @include font-options($oswald, 16px, 20px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.show-products__description {
+  @include font-options($arial, 12px, 16px);
+  color: #444444;
+}
+
+/*переопределяем некоторые свойства класса button*/
+.show-products__all {
+  color: #444444;
+  background-color: $grey-color;
+}
