@@ -1,0 +1,6 @@
+.range__before,
+.range__after {
+  @include font-options($oswald, 16px, 20px);
+  color: #111111;
+  text-transform: uppercase;
+}

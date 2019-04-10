@@ -1,0 +1,9 @@
+.product-order__price-list {
+  @include font-options($arial, 14px, 14px);
+  color: #444444;
+}
+
+.product-order__caption {
+  @include font-options($oswald, 16px, 16px);
+  color: #222222;
+}

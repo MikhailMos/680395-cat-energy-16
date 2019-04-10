@@ -8,6 +8,6 @@
 }
 
 .it-works__item {
-  @include font-options();
+  @include font-options($arial, 14px, 18px);
   color: #444444;
 }

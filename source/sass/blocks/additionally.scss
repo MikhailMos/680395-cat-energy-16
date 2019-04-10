@@ -1,0 +1,15 @@
+.additionally__legend {
+  @include font-options($oswald, 24px, 24px);
+  color: #111111;
+  text-transform: none;
+}
+
+.additionally__list {
+  list-style: none;
+}
+
+.additionally__label {
+  @include font-options($oswald, 16px, 18px);
+  color: #222222;
+  text-transform: uppercase;
+}

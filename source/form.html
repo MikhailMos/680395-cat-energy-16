@@ -9,8 +9,7 @@
       <header class="page-header">
 
         <a class="page-header__logo logo" href="#">
-          <img class="logo__image" src="http://placehold.it/35x40" width="35" height="40" alt="Логотип кошечка">
-          <p class="logo__description logo__description--top">Cat energy</p>
+          <img class="logo__image" src="img/logo-mobile.svg" width="260" height="68" alt="Логотип с названием Cat energy">
         </a>
 
         <nav class="page-header__nav main-nav">
@@ -34,30 +33,30 @@
           <fieldset class="profile__personal-info">
             <p class="profile__name">
               <label class="profile__name-label field field--required" for="petNameField">Имя:</label>
-              <input class="profile__name-input" type="text" name="petName" id="petNameField">
+              <input class="profile__name-input" type="text" name="petName" id="petNameField" value="Барсик">
             </p>
             <p class="profile__weight">
               <label class="profile__weight-label field field--required" for="petWeightField">Вес:</label>
-              <input class="profile__weight-input" type="text" name="petWeight" id="petWeightField">
+              <input class="profile__weight-input" type="text" name="petWeight" id="petWeightField" value="7">
             </p>
             <p class="profile__age">
               <label class="profile__age-label" for="petAgeField">Возвраст (лет):</label>
-              <input class="profile__age-input" type="text" name="petAge" id="petAgeField">
+              <input class="profile__age-input" type="text" name="petAge" id="petAgeField" value="7">
             </p>
           </fieldset>
 
           <fieldset class="profile__choice">
             <ul class="choice">
               <li class="choice__item">
-                <input class="choice__input choice__input--active" type="radio" name="weightLoss" id="weightLossField">
+                <input class="choice__input choice__input--active" type="radio" name="weight" id="weightLossField" checked>
                 <label class="choice__label" for="weightLossField">Похудение</label>
               </li>
               <li class="choice__item">
-                <input class="choice__input" type="radio" name="weightGain" id="weightGainField">
+                <input class="choice__input" type="radio" name="weight" id="weightGainField">
                 <label class="choice__label" for="weightGainField">Набор массы</label>
               </li>
               <li class="choice__item">
-                <input class="choice__input" type="radio" name="weightDontKnow" id="weightDontKnowField">
+                <input class="choice__input" type="radio" name="weight" id="weightDontKnowField">
                 <label class="choice__label" for="weightDontKnowField">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -67,18 +66,17 @@
             <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
             <p class="contacts__email">
               <label class="contacts__label field field--required" for="userEmailField">E-mail:</label>
-              <input class="contacts__input" type="text" name="userEmail" id="userEmailField" placeholder="email@example.com">
+              <input class="contacts__input" type="text" name="userEmail" id="userEmailField" placeholder="email@example.com" value="kuklachev@gmail.com">
             </p>
             <p class="contacts__phone">
               <label class="contacts__label field field--required" for="userPhoneField">Телефон:</label>
-              <input class="contacts__input" type="text" name="userPhone" id="userPhoneField" placeholder="X (XXX) XXX-XX-XX">
+              <input class="contacts__input" type="text" name="userPhone" id="userPhoneField" placeholder="X (XXX) XXX-XX-XX" value="8 (960) 900-60-90">
             </p>
           </fieldset>
 
           <fieldset class="profile__comment comment">
             <legend class="comment__legend">Комментарий</legend>
-            <textarea class="comment__textarea" name="habits" id="habitsField" cols="100" rows="6" placeholder="Расскажите обо всех повадках кота">
-            </textarea>
+            <textarea class="comment__textarea" name="habits" id="habitsField" cols="100" rows="6">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
           <fieldset class="profile__additionally additionally">
@@ -111,7 +109,7 @@
           <h2 class="visually-hidden">Для будущих партнеров</h2>
           <p class="invitation__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="invitation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="invitation__map" src="http://placehold.it/320x385" width="320" height="385" alt="Карта">
+          <img class="invitation__map" src="img/bg-map-mobile@1x.png" width="320" height="340" alt="Карта">
         </section>
 
       </main>

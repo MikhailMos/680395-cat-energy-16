@@ -1,0 +1,38 @@
+.example {
+  background-color: $grey-color;
+}
+
+.example__title {
+  @include font-options($oswald, 36px, 60px);
+  color: #111111;
+}
+
+.example__destination {
+  @include font-options($arial, 14px, 18px);
+  color: #444444;
+}
+
+.example__list {
+  list-style: none;
+}
+
+.example__item {
+  @include font-options($oswald, 24px, 24px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.example__text {
+  @include font-options($arial, 12px, 12px);
+  color:  #444444;
+}
+
+.example__foodCosts {
+  @include font-options($oswald, 14px, 20px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.example__paragraph-range {
+  border: 1px dashed lighten(red, 30%); /*временно*/
+}

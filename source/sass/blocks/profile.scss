@@ -1,0 +1,33 @@
+.profile__title {
+  @include font-options($oswald, 36px, 60px);
+  color: #111111;
+}
+
+.profile__description {
+  @include font-options($oswald, 14px, 18px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.profile__personal-info,
+.profile__choice {
+  @include font-options($oswald, 16px, 18px);
+  color: #222222;
+  text-transform: uppercase;
+  border: none;
+}
+
+.profile__name-input {
+  color: #444444;
+}
+
+.profile__contacts,
+.profile__comment,
+.profile__additionally {
+  border: none;
+}
+
+.profile__small-legend {
+  @include font-options($arial, 14px, 16px);
+  color: #444444;
+}
