@@ -1,0 +1,14 @@
+.page-footer {
+  background-color: $grey-color;
+  border: 1px dashed black; /*временно*/
+}
+
+.page-footer__social {
+  border: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+.page-footer__copyright {
+  @include font-options($arial, 16px, 16px);
+  color: #444444;
+  text-decoration: none;
+}

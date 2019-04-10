@@ -1,0 +1,5 @@
+@mixin font-options($stackFont: $arial, $size: 14px, $line-height: 18px) {
+  font-family: $stackFont;
+  font-size: $size;
+  line-height: $line-height;
+}

@@ -1,0 +1,15 @@
+.promo {
+  /*background-color: $green-color;*/
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  @include font-options($oswald, 36px, 36px);
+  color: #ffffff;
+}
+
+.promo__slogan {
+  @include font-options($oswald, 14px, 14px);
+  color: #ffffff;
+}

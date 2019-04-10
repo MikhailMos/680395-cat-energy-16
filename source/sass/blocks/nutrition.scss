@@ -1,0 +1,24 @@
+.nutrition__list {
+  list-style: none;
+}
+
+.nutrition__item {
+  background-color: $grey-color;
+}
+
+.nutrition__title {
+  @include font-options($oswald, 24px, 37px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.nutrition__description {
+  @include font-options($arial, 14px, 18px);
+  color: #444444;
+}
+
+.nutrition__link {
+  @include font-options($oswald, 16px, 16px);
+  color: #111111;
+  text-transform: uppercase;
+}

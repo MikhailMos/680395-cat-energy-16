@@ -1,0 +1,13 @@
+.it-works__title {
+  @include font-options($oswald, 36px, 60px);
+  color: #111111;
+}
+
+.it-works__list {
+  list-style: none;
+}
+
+.it-works__item {
+  @include font-options();
+  color: #444444;
+}
