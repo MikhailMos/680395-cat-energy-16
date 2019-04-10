@@ -1,0 +1,11 @@
+.comment__legend {
+  @include font-options($oswald, 24px, 24px);
+  color: #111111;
+  text-transform: none;
+}
+
+.comment__textarea {
+  @include font-options($oswald, 16px, 18px);
+  color: #444444;
+  text-transform: uppercase;
+}

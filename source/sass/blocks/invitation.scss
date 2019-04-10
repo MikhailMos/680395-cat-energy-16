@@ -1,0 +1,14 @@
+.invitation--grey {
+  background-color: $grey-color;
+}
+
+.invitation__title {
+  @include font-options($oswald, 16px, 20px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.invitation__address {
+  @include font-options($arial, 14px, 20px);
+  color: #444444;
+}

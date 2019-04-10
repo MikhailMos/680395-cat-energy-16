@@ -1,0 +1,15 @@
+.additional-products__title {
+  @include font-options($oswald, 24px, 24px);
+  color: #111111;
+}
+
+.additional-products__list {
+  list-style: none;
+}
+
+.additional-products__gift {
+  @include font-options($arial, 16px, 20px);
+  color: #ffffff;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
