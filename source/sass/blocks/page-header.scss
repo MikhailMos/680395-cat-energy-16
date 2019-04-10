@@ -1,4 +1,7 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   border: 1px dashed black; /*временно*/
 }
@@ -12,5 +15,16 @@
 }
 
 .page-header__promo {
+  width: 100%;
   border: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+@media (min-width: $table-width) {
+  .page-header {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
