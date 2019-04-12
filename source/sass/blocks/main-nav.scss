@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
     justify-content: space-between;

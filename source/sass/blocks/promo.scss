@@ -11,4 +11,60 @@
 .promo__slogan {
   @include font-options($oswald, 14px, 14px);
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo__img {
+  min-height: 480px;
+  outline: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+.promo__button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    min-height: 860px;
+    background-image: none;
+  }
+
+  .promo__title,
+  .promo__slogan {
+    color: #111111;
+  }
+
+  .promo__title {
+    font-size: 60px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__img {
+    position: absolute;
+    top: 260px;
+    left: 192px;
+  }
+
+  .promo__button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 580px;
+  }
+
+  .promo__img {
+    top: 0;
+    left: 50%;
+  }
 }

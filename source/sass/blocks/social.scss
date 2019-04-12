@@ -1,7 +1,12 @@
 .social {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__link {
   color: #666666;
 }
+

@@ -1,6 +1,6 @@
 .page-main {
   width: 100%;
-  border: 1px dashed black; /*временно*/
+  outline: 1px dashed black; /*временно*/
 }
 
 .page-main__nutrition,
@@ -10,7 +10,7 @@
 .page-main__catalog,
 .page-main__additional-products,
 .page-main__profile {
-  border: 1px dashed lighten(red, 30%); /*временно*/
+  outline: 1px dashed lighten(red, 30%); /*временно*/
 }
 
 /*-в файле catalog.html-*/

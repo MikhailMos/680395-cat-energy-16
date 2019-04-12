@@ -1,3 +1,7 @@
+.it-works {
+  margin: 0 20px;
+}
+
 .it-works__title {
   @include font-options($oswald, 36px, 60px);
   color: #111111;
@@ -5,9 +9,36 @@
 
 .it-works__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .it-works__item {
   @include font-options($arial, 14px, 18px);
   color: #444444;
+  outline: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+@media (min-width: $tablet-width) {
+  .it-works {
+    margin: 0 30px;
+    width: 710px;
+  }
+
+  .it-works__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .it-works__item {
+    max-width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .it-works {
+    margin: 0 auto;
+    width: 1220px;
+  }
 }

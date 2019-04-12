@@ -1,15 +1,20 @@
 .nutrition__list {
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .nutrition__item {
   background-color: $grey-color;
+  margin: 20px;
 }
 
 .nutrition__title {
   @include font-options($oswald, 24px, 37px);
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .nutrition__description {
@@ -21,4 +26,22 @@
   @include font-options($oswald, 16px, 16px);
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item {
+    margin: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+  }
+
+  .nutrition__item {
+    margin: 40px;
+  }
 }
