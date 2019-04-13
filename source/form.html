@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,7 +17,15 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <!--пункты меню-->
           <ul class="main-nav__list">
-            <li class="main-nav__item"></li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Подбор программы</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -115,19 +124,22 @@
       </main>
 
       <footer class="page-footer">
-        <p class="page-footer__logo logo logo--bottom">Cat energy</p>
+        <a class="page-footer__logo logo" href="index.html">
+          <img class="logo__bottom" src="img/logo-footer.svg" width="135" height="30" alt="Логотип Cat energy">
+        </a>
 
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в контакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в контакте">Мы в контакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграм</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в инстаграм">Мы в инстаграм</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбуке">Мы в фейсбуке</a>
           </li>
         </ul>
+
         <a class="page-footer__copyright button" href="https://htmlacademy.ru/">HTML Academy</a>
       </footer>
 </body>
