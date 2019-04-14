@@ -1,10 +1,14 @@
 .page-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 0 20px;
   background-color: $grey-color;
   border: 1px dashed black; /*временно*/
+}
+
+.page-footer__wrapper {
+  margin: 0 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .page-footer__social {
@@ -19,7 +23,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     flex-direction: row;
+    margin: 0 auto;
+    width: $table-width-block;
+  }
+
+  .page-footer__copyright {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width-block;
   }
 }

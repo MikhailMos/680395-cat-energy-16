@@ -1,6 +1,76 @@
+.range {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
 .range__before,
 .range__after {
   @include font-options($oswald, 16px, 20px);
   color: #111111;
   text-transform: uppercase;
+}
+
+.range__scale {
+  width: 88px;
+  height: 14px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  position: relative;
+}
+
+.range__scale-current {
+  width: 44px;
+  height: 8px;
+  background-color: $green-color;
+  border-radius: 4px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    width: 575px;
+  }
+
+  .range__scale {
+    width: 428px;
+    height: 6px;
+  }
+
+  .range__scale-current {
+    width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 198px;
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $green-color;
+      position: absolute;
+      top: 13px;
+      left: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    width: 570px;
+  }
+
+  .range__scale {
+    width: 430px;
+  }
 }

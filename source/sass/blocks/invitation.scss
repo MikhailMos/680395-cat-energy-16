@@ -1,3 +1,7 @@
+.invitation {
+  position: relative;
+}
+
 .invitation--grey {
   background-color: $grey-color;
 }
@@ -6,9 +10,91 @@
   @include font-options($oswald, 16px, 20px);
   color: #111111;
   text-transform: uppercase;
+  margin-right: auto;
 }
 
 .invitation__address {
   @include font-options($arial, 14px, 20px);
   color: #444444;
+}
+
+.invitation__title,
+.invitation__address {
+  width: 140px;
+}
+
+.invitation__wrapper {
+  margin: 0 20px;
+
+  display: flex;
+}
+
+.invitation__map {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .invitation__wrapper {
+    margin: 0 auto;
+    width: 625px;
+  }
+
+  .invitation__title,
+  .invitation__address {
+    width: 160px;
+  }
+
+  .invitation__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .invitation__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .invitation__city {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .invitation__map {
+    padding-right: 100%;
+    box-sizing: border-box;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .invitation__wrapper {
+    margin: 0;
+    width: 520px;
+    min-height: 200px;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 100px;
+    left: 110px;
+
+    align-items: center;
+  }
+
+  .invitation__title,
+  .invitation__address {
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  .invitation__address {
+    text-align: left;
+  }
+
+  .invitation__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
 }

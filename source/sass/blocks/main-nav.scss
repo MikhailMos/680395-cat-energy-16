@@ -10,15 +10,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    width: 445px;
+  }
+
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
-    width: 445px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__link {
-    width: 480px;
+  .main-nav {
+    width: 485px;
   }
 }
