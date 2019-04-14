@@ -1,16 +1,26 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
-  border: 1px dashed black; /*временно*/
+  outline: 2px dashed black; /*временно*/
 }
 
 .page-header__logo {
-  border: 1px dashed lighten(red, 30%); /*временно*/
+  outline: 1px dashed lighten(red, 30%); /*временно*/
 }
 
 .page-header__nav {
-  border: 1px dashed lighten(red, 30%); /*временно*/
+  outline: 1px dashed lighten(red, 30%); /*временно*/
 }
 
 .page-header__promo {
-  border: 1px dashed lighten(red, 30%); /*временно*/
+  width: 100%;
+  outline: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
 }
