@@ -1,9 +1,55 @@
 .product-order__price-list {
   @include font-options($arial, 14px, 14px);
   color: #444444;
+  width: 100%
 }
 
 .product-order__caption {
   @include font-options($oswald, 16px, 16px);
   color: #222222;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product-order__tara {
+  width: 70%;
+  text-align: left;
+}
+
+.product-order__price {
+  width: 100px;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .product-order__price-list{
+    display: flex;
+    width: 100%;
+  }
+
+  .product-order__caption {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: auto;
+  }
+
+  .product-order__tara,
+  .product-order__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-order__tara {
+    text-align: right;
+  }
+
+  .product-order__price {
+    width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-order {
+    display: flex;
+  }
 }

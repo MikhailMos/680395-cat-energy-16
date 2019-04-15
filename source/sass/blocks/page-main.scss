@@ -19,8 +19,7 @@
 }
 
 .page-main__it-works,
-.page-main__title,
-.page-main__catalog {
+.page-main__wrapper {
   margin: 0 20px;
 }
 
@@ -30,10 +29,19 @@
   .page-main__catalog {
     margin: 0 auto;
   }
+
+  .page-main__wrapper {
+    margin: 0 auto;
+    width: $table-width-block;
+  }
+
+  .page-main__title {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__title {
+  .page-main__wrapper {
     width: $desktop-width-block;
   }
 }
