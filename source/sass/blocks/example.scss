@@ -80,7 +80,12 @@
 }
 
 .example__image {
+  display: block;
+  margin: 0 auto;
   border: 1px dashed lighten(red, 30%); /*временно*/
+  &-after {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -133,6 +138,34 @@
     font-size: 20px;
     width: 195px;
     text-align: right;
+  }
+
+  .example__image {
+    // .padding-right: 100%;
+    width: 650px;
+    height: 500px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+
+    &-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      overflow: hidden;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+
+    // &-before {
+    //   background-image: url("../img/before-tablet@1x.png");
+    // }
+
+    &-after {
+      display: block;
+      // background-image: url("../img/after-tablet@1x.png");
+    }
   }
 }
 

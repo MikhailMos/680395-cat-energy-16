@@ -2,6 +2,7 @@
   width: 100%;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 50%;
 }
 
 .promo__title {
@@ -22,6 +23,8 @@
 }
 
 .promo__img {
+  display: block;
+  margin: 0 auto;
   min-height: 480px;
   outline: 1px dashed lighten(red, 30%); /*временно*/
 }
