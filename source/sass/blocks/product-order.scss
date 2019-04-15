@@ -1,7 +1,7 @@
 .product-order__price-list {
   @include font-options($arial, 14px, 14px);
   color: #444444;
-  width: 100%
+  width: 100%;
 }
 
 .product-order__caption {
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product-order__price-list{
+  .product-order__price-list {
     display: flex;
     width: 100%;
   }

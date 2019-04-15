@@ -37,9 +37,11 @@
   width: 124px;
   min-height: 42px;
   margin-right: auto;
-    &:last-child {
+
+  &:last-child {
     margin-right: 0;
   }
+
   padding-top: 14px;
   text-align: center;
   border: 1px solid #cdcdcd;
@@ -92,6 +94,7 @@
   .example {
     background: linear-gradient(180deg, #ffffff 0%, #ffffff 40%, $grey-color 40%, $grey-color 100%);
   }
+
   .example__wrapper,
   .example__slaid {
     margin: 0 auto;
@@ -129,6 +132,7 @@
 
   .example__item:last-child .example__text {
     width: 138px;
+
     &--down {
       left: calc(50% - 68px);
     }
