@@ -12,12 +12,11 @@
 }
 
 .product-order__tara {
-  width: 70%;
   text-align: left;
 }
 
 .product-order__price {
-  width: 100px;
+  width: 20%;
   text-align: right;
 }
 
@@ -44,12 +43,25 @@
   }
 
   .product-order__price {
-    width: 200px;
+    width: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-order {
     display: flex;
+  }
+
+  .product-order__tara {
+    width: 245px;
+    text-align: left;
+  }
+
+  .product-order__price {
+    text-align: left;
+  }
+
+  .product-order__button {
+    width: 245px;
   }
 }
