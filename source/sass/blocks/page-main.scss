@@ -19,19 +19,22 @@
 }
 
 .page-main__it-works,
-.page-main__wrapper {
+.page-main__wrapper,
+.page-main__profile {
   margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__it-works,
   .page-main__title,
-  .page-main__catalog {
+  .page-main__catalog,
+  .page-main__wrapper,
+  .page-main__profile {
     margin: 0 auto;
   }
 
-  .page-main__wrapper {
-    margin: 0 auto;
+  .page-main__wrapper,
+  .page-main__profile {
     width: $table-width-block;
   }
 
@@ -41,7 +44,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__wrapper {
+  .page-main__wrapper,
+  .page-main__profile {
     width: $desktop-width-block;
   }
 }

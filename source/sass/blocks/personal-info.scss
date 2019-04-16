@@ -1,0 +1,26 @@
+.personal-info {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info__item {
+  display: flex;
+}
+
+.personal-info__label {
+  margin-right: 20px;
+}
+
+.personal-info__input {
+  color: #444444;
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-info__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
