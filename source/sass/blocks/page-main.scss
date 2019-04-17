@@ -18,21 +18,34 @@
   color: #111111;
 }
 
-.page-main__title,
-.page-main__catalog {
+.page-main__it-works,
+.page-main__wrapper,
+.page-main__profile {
   margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__it-works,
   .page-main__title,
-  .page-main__catalog {
-    margin: 0 30px;
+  .page-main__catalog,
+  .page-main__wrapper,
+  .page-main__profile {
+    margin: 0 auto;
+  }
+
+  .page-main__wrapper,
+  .page-main__profile {
+    width: $table-width-block;
+  }
+
+  .page-main__title {
+    font-size: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__title {
-    width: 1220px;
-    margin: 0 auto;
+  .page-main__wrapper,
+  .page-main__profile {
+    width: $desktop-width-block;
   }
 }

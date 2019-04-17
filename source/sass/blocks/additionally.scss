@@ -5,11 +5,32 @@
 }
 
 .additionally__list {
-  list-style: none;
+  @include list-reset();
 }
 
 .additionally__label {
   @include font-options($oswald, 16px, 18px);
   color: #222222;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additionally__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additionally__item {
+    width: 285px;
+  }
+
+  .additionally__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

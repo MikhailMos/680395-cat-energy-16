@@ -2,6 +2,11 @@
   background-color: $grey-color;
 }
 
+.example__wrapper {
+  margin: 0 20px;
+  border: 1px dashed lighten(red, 30%); /*временно*/
+}
+
 .example__title {
   @include font-options($oswald, 36px, 60px);
   color: #111111;
@@ -12,27 +17,204 @@
   color: #444444;
 }
 
+.example__wrapper-list-p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .example__list {
-  list-style: none;
+  @include list-reset();
+
+  width: 280px;
+  display: flex;
+  align-items: center;
 }
 
 .example__item {
   @include font-options($oswald, 24px, 24px);
   color: #111111;
-  text-transform: uppercase;
+  width: 124px;
+  min-height: 42px;
+  margin-right: auto;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  padding-top: 14px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
 }
 
 .example__text {
   @include font-options($arial, 12px, 12px);
   color: #444444;
+  text-align: center;
+  width: 88px;
+  background-color: $grey-color;
+
+  &--down {
+    position: absolute;
+    left: calc(50% - 44px);
+    bottom: -14px;
+  }
 }
 
 .example__foodCosts {
   @include font-options($oswald, 14px, 20px);
   color: #111111;
   text-transform: uppercase;
+  text-align: center;
+  border: 1px dashed lighten(red, 30%); /*временно*/
 }
 
 .example__paragraph-range {
   border: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+.example__slaid {
+  border: 1px dashed lighten(red, 30%); /*временно*/
+  margin: 0 auto;
+  position: relative;
+}
+
+.example__image {
+  display: block;
+  margin: 0 auto;
+  border: 1px dashed lighten(red, 30%); /*временно*/
+  &-after {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 40%, $grey-color 40%, $grey-color 100%);
+  }
+
+  .example__wrapper,
+  .example__slaid {
+    margin: 0 auto;
+    width: $table-width-block;
+  }
+
+  .example__wrapper-list-p {
+    flex-direction: row;
+  }
+
+  .example__list {
+    margin-right: auto;
+    width: 370px;
+  }
+
+  .example__item {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 22px;
+    width: 162px;
+    min-height: 53px;
+  }
+
+  .example__text {
+    font-size: 14px;
+    line-height: 14px;
+    width: 110px;
+    background-color: #ffffff;
+
+    &--down {
+      left: calc(50% - 55px);
+      bottom: -6px;
+    }
+  }
+
+  .example__item:last-child .example__text {
+    width: 138px;
+
+    &--down {
+      left: calc(50% - 68px);
+    }
+  }
+
+  .example__foodCosts {
+    font-size: 20px;
+    width: 195px;
+    text-align: right;
+  }
+
+  .example__image {
+    // .padding-right: 100%;
+    width: 650px;
+    height: 500px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+
+    &-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      overflow: hidden;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+
+    // &-before {
+    //   background-image: url("../img/before-tablet@1x.png");
+    // }
+
+    &-after {
+      display: block;
+      // background-image: url("../img/after-tablet@1x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 15%, $grey-color 15%, $grey-color 100%);
+  }
+
+  .example__wrapper {
+    width: $desktop-width-block;
+  }
+
+  .example__destination {
+    width: 440px;
+  }
+
+  .example__wrapper-list-p {
+    display: inline-block;
+    flex-direction: column;
+    width: 350px;
+    margin-right: 200px;
+    vertical-align: top;
+  }
+
+  .example__list {
+    width: 100%;
+  }
+
+  .example__text {
+    background-color: $grey-color;
+  }
+
+  .example__foodCosts {
+    width: 330px;
+    text-align: left;
+  }
+
+  .example__foodCosts-cost {
+    margin-left: 60px;
+  }
+
+  .example__slaid {
+    display: inline-block;
+    width: 650px;
+    top: -180px;
+  }
 }

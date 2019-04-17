@@ -9,15 +9,26 @@
   text-transform: uppercase;
 }
 
+.profile__wrapper-main {
+  margin: 0;
+  padding: 0;
+}
+
 .profile__personal-info,
-.profile__choice {
+.profile__choice,
+.profile__contacts,
+.profile__comment,
+.profile__additionally {
   @include font-options($oswald, 16px, 18px);
   color: #222222;
   text-transform: uppercase;
   border: none;
+  margin: 0;
+  padding: 0;
+  outline: 1px dashed lighten(red, 30%); /*временно*/
 }
 
-.profile__name-input {
+.profile__comment {
   color: #444444;
 }
 
@@ -30,4 +41,100 @@
 .profile__small-legend {
   @include font-options($arial, 14px, 16px);
   color: #444444;
+  text-align: center;
+}
+
+.profile__button {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__title {
+    font-size: 60px;
+  }
+
+  .profile__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 40px;
+    width: 345px;
+  }
+
+  .profile__personal-info,
+  .profile__choice,
+  .profile__contacts,
+  .profile__comment,
+  .profile__additionally {
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: $table-width-block;
+  }
+
+  .profile__comment {
+    line-height: 30px;
+  }
+
+  .profile__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 60px;
+    width: 285px;
+  }
+
+  .profile__small-legend {
+    font-size: 16px;
+  }
+
+  .profile__bottom-wrapper {
+    display: flex;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__personal-info,
+  .profile__choice,
+  .profile__contacts,
+  .profile__comment,
+  .profile__additionally {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: $desktop-width-block;
+  }
+
+  .profile__wrapper-main {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile__personal-info,
+  .profile__choice {
+    margin-left: 0;
+    margin-right: 0;
+    width: 570px;
+  }
+
+  .profile__personal-info {
+    margin-right: auto;
+  }
+
+  .profile__description {
+    margin-left: 0;
+  }
+
+  .profile__bottom-wrapper {
+    margin-left: 0;
+  }
+
+  .profile__button {
+    margin-right: 80px;
+    width: 570px;
+  }
 }

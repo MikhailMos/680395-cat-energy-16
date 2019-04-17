@@ -18,3 +18,15 @@
   color: #444444;
   background-color: $grey-color;
 }
+
+@media (min-width: $tablet-width) {
+  .show-products {
+    width: 325px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-products {
+    width: 245px;
+  }
+}

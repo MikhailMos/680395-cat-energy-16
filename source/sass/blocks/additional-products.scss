@@ -4,12 +4,55 @@
 }
 
 .additional-products__list {
-  list-style: none;
+  @include list-reset();
 }
 
 .additional-products__gift {
   @include font-options($arial, 16px, 20px);
   color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
+  padding: 190px 55px 40px 55px;
+  text-align: center;
+
+  box-sizing: border-box;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 35px;
+  }
+
+  .additional-products__gift {
+    width: 100%;
+    min-height: 200px;
+    padding: 74px 120px 74px 423px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__wrapper {
+    display: flex;
+  }
+
+  .additional-products__list {
+    width: 100%;
+  }
+
+  .additional-products__gift {
+    width: 300px;
+    min-height: 290px;
+    margin-right: 0;
+    margin-left: 80px;
+    padding: 190px 40px 40px 40px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    text-align: center;
+  }
 }

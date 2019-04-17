@@ -8,4 +8,19 @@
   @include font-options($oswald, 16px, 18px);
   color: #444444;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__textarea {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

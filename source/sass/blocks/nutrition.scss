@@ -1,12 +1,14 @@
+.nutrition {
+  margin: 0 20px;
+}
+
 .nutrition__list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
+  @include list-reset();
 }
 
 .nutrition__item {
   background-color: $grey-color;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .nutrition__title {
@@ -29,19 +31,29 @@
 }
 
 @media (min-width: $tablet-width) {
+  .nutrition {
+    margin: 0 auto;
+    width: $table-width-block;
+  }
+
   .nutrition__item {
-    margin: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .nutrition {
+    width: $desktop-width-block;
+  }
+
   .nutrition__list {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    flex-wrap: wrap;
   }
 
   .nutrition__item {
-    margin: 40px;
+    margin-bottom: 40px;
+    width: 570px;
   }
 }
