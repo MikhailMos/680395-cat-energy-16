@@ -38,23 +38,5 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width-block;
-
-    position: relative;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: -110px;
-
-      width: 720px;
-      height: 100%;
-      background-color: $green-color;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-
-      z-index: -1;
-    }
   }
 }
