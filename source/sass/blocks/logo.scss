@@ -1,12 +1,32 @@
+.logo {
+  display: block;
+  width: 190px;
+  height: 65px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  margin-left: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .logo {
     margin-right: auto;
+    height: 58px;
   }
 
   .logo__image {
+    margin-left: 0;
     padding-left: 200px;
-    width: 200px;
-    height: 68px;
+    width: 190px;
+    height: 58px;
     box-sizing: border-box;
     background-image: url("../img/logo-tablet.svg");
     background-repeat: no-repeat;
