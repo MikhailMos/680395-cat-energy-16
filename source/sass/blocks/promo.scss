@@ -1,31 +1,36 @@
 .promo {
+  padding-top: 30px;
   width: 100%;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 50%;
+  background-position: top center;
 }
 
 .promo__title {
   @include font-options($oswald, 36px, 36px);
   color: #ffffff;
+  margin-top: 0;
 }
 
 .promo__slogan {
   @include font-options($oswald, 14px, 14px);
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .promo__title,
 .promo__slogan {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  text-align: center;
 }
 
 .promo__img {
   display: block;
   margin: 0 auto;
-  min-height: 480px;
 }
 
 .promo__button {
@@ -39,30 +44,43 @@
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
+    padding-top: 0;
     width: $table-width-block;
-    min-height: 860px;
+    min-height: 830px;
     background-image: none;
   }
 
   .promo__title,
   .promo__slogan {
     color: #111111;
+    text-align: left;
   }
 
   .promo__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .promo__title,
+  .promo__slogan {
+    width: 425px;
   }
 
   .promo__img {
     position: absolute;
-    top: 260px;
-    left: 192px;
+    top: 200px;
+    left: 90px;
+    z-index: -1;
+    width: 630px;
+    height: 610px;
   }
 
   .promo__button {
@@ -83,17 +101,25 @@
 @media (min-width: $desktop-width) {
   .promo {
     width: $desktop-width-block;
-    min-height: 580px;
+    min-height: 480px;
   }
 
   .promo__img {
-    top: 0;
-    left: 50%;
+    top: -70px;
+    left: 480px;
+    z-index: 0;
+
+    width: 550px;
+    height: 500px;
   }
 
   .promo__title,
   .promo__slogan,
   .promo__button {
     margin-left: 80px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 54px;
   }
 }
