@@ -7,27 +7,129 @@
 }
 
 .nutrition__item {
+  position: relative;
+
   background-color: $grey-color;
   margin-bottom: 20px;
+  padding: 40px 20px 20px 20px;
+
+  &::before {
+    content: "";
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: $green-color;
+
+    position: absolute;
+    top: 33px;
+    left: 35px;
+  }
+
+  &--cat-sitting::after {
+    content: "";
+
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 30px;
+    left: 35px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-size: 50px 50px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--cat-standing::after {
+    content: "";
+
+    width: 80px;
+    height: 40px;
+
+    position: absolute;
+    top: 39px;
+    left: 25px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-size: 70px 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .nutrition__title {
   @include font-options($oswald, 24px, 37px);
   color: #111111;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 40px 92px;
   padding: 0;
 }
 
 .nutrition__description {
   @include font-options($arial, 14px, 18px);
   color: #444444;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .nutrition__link {
   @include font-options($oswald, 16px, 16px);
   color: #111111;
   text-transform: uppercase;
+  text-decoration: none;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #3e4242;
+
+    position: absolute;
+    top: 12px;
+    right: -32px;
+  }
+
+  &::after {
+    content: "";
+
+    border-left: 7px solid #3e4242;
+    border-top: 6px solid #3e4242;
+    border-right: 7px solid #3e4242;
+    border-bottom: 6px solid #3e4242;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+
+    position: absolute;
+    top: 7px;
+    right: -46px;
+  }
+
+
+  &:hover {
+    &::before {
+      content: "";
+      right: -40px;
+      width: 26px;
+    }
+
+    &::after {
+      content: "";
+
+      right: -54px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +140,62 @@
 
   .nutrition__item {
     margin-bottom: 30px;
+    padding: 80px 276px 60px 50px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 25%;
+      left: 450px;
+    }
+
+    &--cat-sitting::after {
+      top: 22%;
+      left: 68%;
+
+      width: 145px;
+      height: 195px;
+
+      background-size: 145px 195px;
+    }
+
+    &--cat-standing::after {
+      top: 36%;
+      left: 58%;
+
+      width: 268px;
+      height: 115px;
+
+      background-size: 268px 115px;
+    }
+  }
+
+  .nutrition__title {
+    font-size: 36px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .nutrition__description {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 60px;
+
+    border-bottom: none;
+  }
+
+  .nutrition__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: 14px;
+    }
+
+    &::after {
+      top: 9px;
+    }
   }
 }
 
@@ -54,6 +212,44 @@
 
   .nutrition__item {
     margin-bottom: 40px;
+    box-sizing: border-box;
+    padding: 80px 55px 60px 50px;
     width: 570px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 46px;
+      left: 50px;
+    }
+
+    &--cat-sitting::after {
+      top: 40px;
+      left: 65px;
+
+      width: 70px;
+      height: 100px;
+
+      background-size: 70px 100px;
+    }
+
+    &--cat-standing::after {
+      top: 65px;
+      left: 32px;
+
+      width: 135px;
+      height: 68px;
+
+      background-size: 135px 68px;
+    }
+  }
+
+  .nutrition__title {
+    margin-left: 165px;
+    margin-bottom: 78px;
+  }
+
+  .nutrition__description {
+    margin-bottom: 38px;
   }
 }

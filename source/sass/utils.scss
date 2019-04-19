@@ -38,6 +38,15 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $green-color;
+
+  &:hover,
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #99c684;
+  }
 }
 
 body {
