@@ -11,7 +11,7 @@
 
   background-color: $grey-color;
   margin-bottom: 20px;
-  padding: 40px 20px 20px 20px;
+  padding: 30px 20px 17px 20px;
 
   &::before {
     content: "";
@@ -23,8 +23,8 @@
     background-color: $green-color;
 
     position: absolute;
-    top: 33px;
-    left: 35px;
+    top: 24px;
+    left: 23px;
   }
 
   &--cat-sitting::after {
@@ -34,8 +34,8 @@
     height: 50px;
 
     position: absolute;
-    top: 30px;
-    left: 35px;
+    top: 21px;
+    left: 23px;
 
     background-image: url("../img/icon-cat-slim.svg");
     background-size: 50px 50px;
@@ -50,8 +50,8 @@
     height: 40px;
 
     position: absolute;
-    top: 39px;
-    left: 25px;
+    top: 30px;
+    left: 13px;
 
     background-image: url("../img/icon-cat-pro.svg");
     background-size: 70px 40px;
@@ -64,14 +64,15 @@
   @include font-options($oswald, 24px, 37px);
   color: #111111;
   text-transform: uppercase;
-  margin: 0 0 40px 92px;
+  margin: 0 0 29px 72px;
   padding: 0;
 }
 
 .nutrition__description {
   @include font-options($arial, 14px, 18px);
   color: #444444;
-  padding-bottom: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -92,8 +93,8 @@
     background-color: #3e4242;
 
     position: absolute;
-    top: 12px;
-    right: -32px;
+    top: 11px;
+    right: -30px;
   }
 
   &::after {
@@ -108,8 +109,8 @@
     border-right-color: transparent;
 
     position: absolute;
-    top: 7px;
-    right: -46px;
+    top: 6px;
+    right: -44px;
   }
 
 
@@ -135,33 +136,38 @@
 @media (min-width: $tablet-width) {
   .nutrition {
     margin: 0 auto;
-    width: $table-width-block;
+    margin-bottom: 44px;
+    width: $tablet-width-block;
   }
 
   .nutrition__item {
     margin-bottom: 30px;
-    padding: 80px 276px 60px 50px;
+    padding: 78px 276px 59px 54px;
+
+    &:nth-child(2) .nutrition__description {
+      width: 340px;
+    }
 
     &::before {
       width: 200px;
       height: 200px;
-      top: 25%;
-      left: 450px;
+      top: 92px;
+      left: 448px;
     }
 
     &--cat-sitting::after {
-      top: 22%;
-      left: 68%;
+      top: 80px;
+      left: 475px;
 
-      width: 145px;
-      height: 195px;
+      width: 144px;
+      height: 194px;
 
-      background-size: 145px 195px;
+      background-size: 144px 194px;
     }
 
     &--cat-standing::after {
-      top: 36%;
-      left: 58%;
+      top: 133px;
+      left: 413px;
 
       width: 268px;
       height: 115px;
@@ -174,13 +180,14 @@
     font-size: 36px;
     margin-left: 0;
     margin-right: 30px;
+    margin-bottom: 24px;
   }
 
   .nutrition__description {
     font-size: 16px;
     line-height: 24px;
 
-    margin-bottom: 60px;
+    margin-bottom: 34px;
 
     border-bottom: none;
   }
@@ -191,10 +198,12 @@
 
     &::before {
       top: 14px;
+      right: -41px;
     }
 
     &::after {
       top: 9px;
+      right: -55px;
     }
   }
 }

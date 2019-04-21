@@ -1,0 +1,60 @@
+.button {
+  display: block;
+
+  @include font-options($oswald, 16px, 20px);
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $green-color;
+
+  &:hover,
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #99c684;
+  }
+}
+
+.button__fotter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 0;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+
+    & .button__footer-svg {
+      fill: $green-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.button__fotter-span {
+  text-transform: none;
+  flex-grow: 1;
+}
+
+.button__footer-svg {
+  fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .button__fotter {
+    justify-content: flex-end;
+  }
+
+  .button__footer-svg {
+    margin-left: 10px;
+    width: 40px;
+  }
+}

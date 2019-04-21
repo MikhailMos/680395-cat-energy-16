@@ -29,26 +29,6 @@
   overflow: hidden;
 }
 
-.button {
-  display: block;
-
-  @include font-options($oswald, 16px, 20px);
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $green-color;
-
-  &:hover,
-  &:active {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    color: #99c684;
-  }
-}
-
 body {
   min-width: 320px;
   margin: 0;

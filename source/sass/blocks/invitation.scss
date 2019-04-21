@@ -34,8 +34,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .invitation {
+    padding-top: 44px;
+  }
+
   .invitation__wrapper {
     margin: 0 auto;
+    margin-bottom: 40px;
     width: 625px;
   }
 

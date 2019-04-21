@@ -1,33 +1,122 @@
 .it-works__title {
   @include font-options($oswald, 36px, 60px);
   color: #111111;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .it-works__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 80px;
 }
 
 .it-works__item {
   @include font-options($arial, 14px, 18px);
   color: #444444;
-  outline: 1px dashed lighten(red, 30%); /*временно*/
+  margin-bottom: 20px;
+  height: 60px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: -1px;
+    left: -79px;
+
+    background-color: $green-color;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .it-works {
-    width: $table-width-block;
+    width: $tablet-width-block;
+  }
+
+  .it-works__title {
+    font-size: 60px;
+    margin-bottom: 73px;
   }
 
   .it-works__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: space-between;
     flex-wrap: wrap;
+
+    padding-left: 0;
+    min-height: 602px;
   }
 
   .it-works__item {
-    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 124px;
+    margin-bottom: 115px;
+    padding-top: 110px;
+    max-width: 260px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+
+      left: 1px;
+      background-position: 15px;
+    }
+
+    &::after {
+      content: " 1";
+
+      @include font-options($oswald, 281px, 281px);
+      color: #f2f2f2;
+
+      height: 100%;
+      position: absolute;
+      top: -41px;
+      left: 114px;
+      z-index: -1;
+    }
+
+    &:first-child::after {
+      left: 120px;
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+    }
   }
 }
 

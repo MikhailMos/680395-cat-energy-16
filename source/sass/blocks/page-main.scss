@@ -2,8 +2,6 @@
   width: 100%;
 }
 
-.page-main__it-works,
-.page-main__example,
 .page-main__invitation,
 .page-main__catalog,
 .page-main__additional-products,
@@ -33,7 +31,7 @@
 
   .page-main__wrapper,
   .page-main__profile {
-    width: $table-width-block;
+    width: $tablet-width-block;
   }
 
   .page-main__title {

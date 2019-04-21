@@ -15,14 +15,15 @@
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    width: $table-width-block;
+    width: $tablet-width-block;
+    margin-bottom: 0;
     padding-top: 0;
   }
 
   .page-header__wrapper {
     margin: 0 auto;
-    margin-top: 24px;
-    margin-bottom: 60px;
+    margin-top: 17px;
+    margin-bottom: 50px;
     width: 100%;
 
     display: flex;
