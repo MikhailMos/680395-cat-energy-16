@@ -14,6 +14,7 @@
   color: #111111;
 }
 
+.page-main__nutrition,
 .page-main__it-works,
 .page-main__wrapper,
 .page-main__profile {
@@ -21,12 +22,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__nutrition,
   .page-main__it-works,
   .page-main__title,
   .page-main__catalog,
   .page-main__wrapper,
   .page-main__profile {
     margin: 0 auto;
+  }
+
+  .page-main__nutrition {
+    margin-bottom: 44px;
+  }
+
+  .page-main__example {
+    margin-bottom: 75px;
   }
 
   .page-main__wrapper,
@@ -43,5 +53,9 @@
   .page-main__wrapper,
   .page-main__profile {
     width: $desktop-width-block;
+  }
+
+  .page-main__nutrition {
+    margin-bottom: 31px;
   }
 }

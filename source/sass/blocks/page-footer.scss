@@ -46,6 +46,16 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
+    padding-top: 52px;
     width: $desktop-width-block;
+  }
+
+  .page-footer__logo {
+    margin-right: 57px;
+    margin-left: 0;
+  }
+
+  .page-footer__copyright {
+    width: 280px;
   }
 }

@@ -1,7 +1,3 @@
-.nutrition {
-  margin: 0 20px;
-}
-
 .nutrition__list {
   @include list-reset();
 }
@@ -135,8 +131,6 @@
 
 @media (min-width: $tablet-width) {
   .nutrition {
-    margin: 0 auto;
-    margin-bottom: 44px;
     width: $tablet-width-block;
   }
 
@@ -222,19 +216,23 @@
   .nutrition__item {
     margin-bottom: 40px;
     box-sizing: border-box;
-    padding: 80px 55px 60px 50px;
+    padding: 75px 55px 60px 49px;
     width: 570px;
+
+    &:nth-child(2) .nutrition__description {
+      width: 460px;
+    }
 
     &::before {
       width: 100px;
       height: 100px;
       top: 46px;
-      left: 50px;
+      left: 52px;
     }
 
     &--cat-sitting::after {
-      top: 40px;
-      left: 65px;
+      top: 39px;
+      left: 66px;
 
       width: 70px;
       height: 100px;
@@ -243,8 +241,8 @@
     }
 
     &--cat-standing::after {
-      top: 65px;
-      left: 32px;
+      top: 62px;
+      left: 33px;
 
       width: 135px;
       height: 68px;
@@ -255,10 +253,15 @@
 
   .nutrition__title {
     margin-left: 165px;
-    margin-bottom: 78px;
+    margin-bottom: 74px;
   }
 
   .nutrition__description {
-    margin-bottom: 38px;
+    padding-left: 2px;
+    margin-bottom: 10px;
+  }
+
+  .nutrition__link {
+    margin-left: 3px;
   }
 }

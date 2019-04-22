@@ -75,6 +75,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .invitation {
+    padding-top: 0;
+  }
+
   .invitation__wrapper {
     margin: 0;
     width: 520px;
@@ -99,6 +103,8 @@
   }
 
   .invitation__map {
+    max-width: $desktop-width;
+    height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
   }
 }

@@ -73,8 +73,8 @@
     font-size: 16px;
     line-height: 24px;
     margin-right: 124px;
-    margin-bottom: 115px;
-    padding-top: 110px;
+    margin-bottom: 113px;
+    padding-top: 112px;
     max-width: 260px;
 
     &:nth-child(2n) {
@@ -85,6 +85,7 @@
       width: 80px;
       height: 80px;
 
+      top: 0;
       left: 1px;
       background-position: 15px;
     }
@@ -118,10 +119,38 @@
       content: "4";
     }
   }
+
+  .it-works__item--line-break {
+    display: block;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .it-works {
     width: $desktop-width-block;
+  }
+
+  .it-works__list {
+    min-height: 265px;
+    justify-content: flex-start;
+  }
+
+  .it-works__item {
+    margin-right: 80px;
+    margin-bottom: 80px;
+    width: 245px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      top: -1px;
+    }
   }
 }

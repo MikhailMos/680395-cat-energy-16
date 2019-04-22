@@ -14,7 +14,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 25px 0;
+  padding: 22px 0 23px 0;
 
   @include font-options($oswald-medium, 20px, 20px);
   color: #111111;
@@ -54,7 +54,7 @@
     content: "";
 
     position: absolute;
-    top: 33px;
+    top: 31px;
     left: 21px;
 
     width: 23px;
@@ -114,7 +114,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 16px;
+        bottom: 14px;
 
         height: 2px;
 
@@ -129,6 +129,7 @@
 
   .main-nav__link {
     @include font-options($oswald, 18px, 25px);
+    padding-top: 25px;
   }
 
   .main-nav__link[href] {
@@ -144,11 +145,12 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 485px;
+    width: 480px;
   }
 
   .header-main {
     & .main-nav__item--active::after {
+      bottom: 13px;
       background-color: #ffffff;
     }
 
