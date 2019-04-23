@@ -3,13 +3,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   width: 100%;
 }
 
 .page-header__nav {
   margin: 0;
   padding: 0;
+}
+
+.page-header__promo {
+  margin-bottom: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +27,6 @@
   .page-header__wrapper {
     margin: 0 auto;
     margin-top: 17px;
-    margin-bottom: 50px;
     width: 100%;
 
     display: flex;
@@ -32,17 +35,20 @@
 
   .page-header__promo {
     margin: 0 auto;
+    margin-top: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width-block;
-    margin-bottom: 74px;
   }
 
   .page-header__wrapper {
     margin-top: 48px;
-    margin-bottom: 102px;
+  }
+
+  .page-header__promo {
+    margin-top: 102px;
   }
 }

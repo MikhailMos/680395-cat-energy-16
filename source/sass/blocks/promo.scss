@@ -55,6 +55,7 @@
 
   .promo__title,
   .promo__slogan {
+    width: 425px;
     color: #111111;
     text-align: left;
   }
@@ -70,11 +71,6 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 48px;
-  }
-
-  .promo__title,
-  .promo__slogan {
-    width: 425px;
   }
 
   .promo__img {

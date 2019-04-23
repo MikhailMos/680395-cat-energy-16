@@ -1,5 +1,6 @@
 .main-nav__list {
   position: relative;
+
   @include list-reset();
   text-align: center;
 }
@@ -96,7 +97,7 @@
     flex-wrap: wrap;
   }
 
-  .main-nav__item{
+  .main-nav__item {
     margin-right: 35px;
     border-top: none;
 
@@ -148,9 +149,12 @@
     width: 480px;
   }
 
+  .main-nav__item--active::after {
+    bottom: 13px;
+  }
+
   .header-main {
     & .main-nav__item--active::after {
-      bottom: 13px;
       background-color: #ffffff;
     }
 
