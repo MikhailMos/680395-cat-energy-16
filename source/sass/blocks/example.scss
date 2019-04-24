@@ -163,8 +163,9 @@
     height: 500px;
     box-sizing: border-box;
     background-repeat: no-repeat;
+  }
 
-    &-cover {
+  .example__image-cover {
       position: absolute;
       top: 0;
       left: 0;
@@ -173,12 +174,11 @@
       overflow: hidden;
       transform: translateZ(0);
       backface-visibility: hidden;
-    }
+  }
 
-    &-after {
+  .example__image-after {
       display: block;
       margin-bottom: 38px;
-    }
   }
 }
 
