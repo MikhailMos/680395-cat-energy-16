@@ -166,19 +166,19 @@
   }
 
   .example__image-cover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 50%;
-      overflow: hidden;
-      transform: translateZ(0);
-      backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 
   .example__image-after {
-      display: block;
-      margin-bottom: 38px;
+    display: block;
+    margin-bottom: 38px;
   }
 }
 
