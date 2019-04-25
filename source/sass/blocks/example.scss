@@ -103,13 +103,15 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    margin-top: 0;
+    padding-bottom: 78px;
     border-top: 1px solid #e6e6e6;
-    background: linear-gradient(180deg, #ffffff 0%, #ffffff 40%, $grey-color 40%, $grey-color 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 620px, $grey-color 620px, $grey-color 100%);
   }
 
   .example__title {
     font-size: 60px;
-    margin: 42px 0 65px 1px;
+    margin: 28px 0 64px 1px;
   }
 
   .example__destination {
@@ -127,7 +129,7 @@
 
   .example__wrapper-list-p {
     flex-direction: row;
-    margin-bottom: 75px;
+    margin-bottom: 67px;
   }
 
   .example__list {
@@ -138,9 +140,9 @@
   .example__item {
     font-size: 30px;
     line-height: 37px;
-    padding-top: 22px;
+    padding-top: 16px;
+    padding-bottom: 15px;
     width: 162px;
-    min-height: 53px;
   }
 
   .example__text {
@@ -167,9 +169,16 @@
     font-size: 20px;
     width: 195px;
     text-align: right;
+    margin: 14px 2px 0 0;
+  }
+
+  .example__foodCosts-cost {
+    display: block;
+    margin-top: 9px;
   }
 
   .example__image {
+    margin-left: auto;
     width: 650px;
     height: 500px;
     box-sizing: border-box;
@@ -187,9 +196,20 @@
     backface-visibility: hidden;
   }
 
+  .example__image-before {
+    margin-left: 17px;
+    width: 690px;
+    height: 514px;
+  }
+
   .example__image-after {
     display: block;
-    margin-bottom: 38px;
+    width: 720px;
+    height: 517px;
+  }
+
+  .example__paragraph-range {
+    margin-top: 18px;
   }
 }
 

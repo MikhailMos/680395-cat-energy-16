@@ -42,9 +42,37 @@
     width: 575px;
   }
 
+  .range__before,
+  .range__after {
+    position: relative;
+    font-size: 20px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+
+      width: 100%;
+      border-bottom: 1px dashed #bebebe;
+    }
+  }
+
+  .range__before {
+    margin-left: 0;
+    margin-right: 24px;
+  }
+
+  .range__after::before {
+    border-bottom-color: #b8b8b8;
+  }
+
   .range__scale {
+    margin-right: 20px;
     width: 428px;
     height: 6px;
+    background-color: #dcdcdc;
   }
 
   .range__scale-current {
