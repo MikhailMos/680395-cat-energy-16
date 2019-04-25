@@ -20,17 +20,42 @@
 
 .invitation__title,
 .invitation__address {
+  margin: 0;
   width: 140px;
 }
 
 .invitation__wrapper {
-  margin: 0 20px;
-
+  margin: 27px 20px 25px;
   display: flex;
 }
 
+.invitation__cover-map {
+  position: relative;
+  width: 320px;
+  height: 362px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 130px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+}
+
 .invitation__map {
-  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 @media (min-width: $tablet-width) {

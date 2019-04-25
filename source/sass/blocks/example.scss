@@ -1,20 +1,28 @@
 .example {
+  margin-top: 41px;
+  padding-top: 17px;
+  padding-bottom: 38px;
   background-color: $grey-color;
+  box-sizing: border-box;
 }
 
 .example__wrapper {
   margin: 0 20px;
-  border: 1px dashed lighten(red, 30%); /*временно*/
 }
 
 .example__title {
   @include font-options($oswald, 36px, 60px);
   color: #111111;
+  margin: 0;
+  margin-bottom: 22px;
 }
 
 .example__destination {
   @include font-options($arial, 14px, 18px);
   color: #444444;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 1px;
 }
 
 .example__wrapper-list-p {
@@ -26,6 +34,7 @@
 .example__list {
   @include list-reset();
 
+  margin-bottom: 18px;
   width: 280px;
   display: flex;
   align-items: center;
@@ -44,6 +53,7 @@
 
   padding-top: 14px;
   text-align: center;
+  text-transform: uppercase;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   position: relative;
@@ -53,13 +63,14 @@
   @include font-options($arial, 12px, 12px);
   color: #444444;
   text-align: center;
-  width: 88px;
+  width: 82px;
   background-color: $grey-color;
 
   &--down {
     position: absolute;
     left: calc(50% - 44px);
     bottom: -14px;
+    text-transform: lowercase;
   }
 }
 
@@ -68,23 +79,23 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
-  border: 1px dashed lighten(red, 30%); /*временно*/
 }
 
 .example__paragraph-range {
-  border: 1px dashed lighten(red, 30%); /*временно*/
+  margin: 0 auto;
+  margin-top: 32px;
 }
 
 .example__slaid {
-  border: 1px dashed lighten(red, 30%); /*временно*/
   margin: 0 auto;
+  margin-top: 20px;
   position: relative;
 }
 
 .example__image {
   display: block;
   margin: 0 auto;
-  border: 1px dashed lighten(red, 30%); /*временно*/
+  margin-left: -22px;
   &-after {
     display: none;
   }
