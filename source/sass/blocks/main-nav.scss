@@ -1,17 +1,94 @@
 .main-nav__list {
+  position: relative;
+
   @include list-reset();
+  text-align: center;
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .main-nav__link {
+  display: block;
+  padding: 22px 0 23px 0;
+
   @include font-options($oswald-medium, 20px, 20px);
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 65px;
+  height: 65px;
+  border: none;
+  cursor: pointer;
+
+  background-color: #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  left: 21px;
+
+  width: 23px;
+  height: 2px;
+  background-color: #222222;
+  box-shadow: 0 8px 0 #222222, 0 16px 0 #222222;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 31px;
+    left: 21px;
+
+    width: 23px;
+    height: 2px;
+
+    background-color: #222222;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list,
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list,
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 445px;
+    width: 440px;
   }
 
   .main-nav__list {
@@ -20,13 +97,73 @@
     flex-wrap: wrap;
   }
 
+  .main-nav__item {
+    margin-right: 35px;
+    border-top: none;
+
+    &:last-child {
+      border-bottom: none;
+      margin-right: 0;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 14px;
+
+        height: 2px;
+
+        background-color: $green-color;
+      }
+    }
+  }
+
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__link {
+    @include font-options($oswald, 18px, 25px);
+    padding-top: 25px;
+  }
+
+  .main-nav__link[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 485px;
+    width: 480px;
+  }
+
+  .main-nav__item--active::after {
+    bottom: 13px;
+  }
+
+  .header-main {
+    & .main-nav__item--active::after {
+      background-color: #ffffff;
+    }
+
+    & .main-nav__link {
+      color: #ffffff;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 20px;
   }
 }

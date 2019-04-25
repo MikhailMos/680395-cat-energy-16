@@ -1,32 +1,38 @@
 .promo {
+  padding-top: 26px;
   width: 100%;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 50%;
+  background-size: 100% 306px;
+  background-position: top center;
 }
 
 .promo__title {
   @include font-options($oswald, 36px, 36px);
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .promo__slogan {
   @include font-options($oswald, 14px, 14px);
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 29px;
 }
 
 .promo__title,
 .promo__slogan {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  text-align: center;
 }
 
 .promo__img {
   display: block;
   margin: 0 auto;
-  min-height: 480px;
-  outline: 1px dashed lighten(red, 30%); /*временно*/
+  margin-bottom: 3px;
 }
 
 .promo__button {
@@ -34,36 +40,47 @@
   line-height: 18px;
   text-align: center;
   margin: 0 20px;
-  padding: 13px;
+  padding: 12px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
-    width: $table-width-block;
-    min-height: 860px;
+    padding-top: 0;
+    width: $tablet-width-block;
+    min-height: 808px;
     background-image: none;
   }
 
   .promo__title,
   .promo__slogan {
+    width: 425px;
     color: #111111;
+    text-align: left;
   }
 
   .promo__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 48px;
   }
 
   .promo__img {
     position: absolute;
-    top: 260px;
-    left: 192px;
+    top: 198px;
+    left: 80px;
+    z-index: -1;
+    width: 630px;
+    height: 610px;
+    margin-bottom: 0;
   }
 
   .promo__button {
@@ -76,7 +93,7 @@
   .promo__title,
   .promo__slogan,
   .promo__button {
-    margin-left: 90px;
+    margin-left: 89px;
     margin-right: 0;
   }
 }
@@ -84,17 +101,25 @@
 @media (min-width: $desktop-width) {
   .promo {
     width: $desktop-width-block;
-    min-height: 580px;
+    min-height: 480px;
   }
 
   .promo__img {
-    top: 0;
-    left: 50%;
+    top: -82px;
+    left: 486px;
+    z-index: 0;
+
+    width: 516px;
+    height: 497px;
   }
 
   .promo__title,
   .promo__slogan,
   .promo__button {
     margin-left: 80px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 54px;
   }
 }
