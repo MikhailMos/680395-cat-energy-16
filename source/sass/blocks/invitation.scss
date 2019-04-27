@@ -25,7 +25,9 @@
 }
 
 .invitation__wrapper {
-  margin: 27px 20px 25px;
+  margin: 0 20px;
+  padding-top: 27px;
+  padding-bottom: 25px;
   display: flex;
 }
 
@@ -35,7 +37,7 @@
   height: 362px;
   overflow: hidden;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 140px;
@@ -55,17 +57,16 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 @media (min-width: $tablet-width) {
   .invitation {
-    padding-top: 44px;
+    padding-top: 36px;
   }
 
   .invitation__wrapper {
     margin: 0 auto;
-    margin-bottom: 59px;
+    margin-bottom: 34px;
     width: 625px;
   }
 
@@ -88,7 +89,7 @@
 
   .invitation__city {
     display: block;
-    margin-top: 18px;
+    margin-top: 19px;
   }
 
   .invitation__map {
@@ -104,7 +105,7 @@
     height: 396px;
   }
 
-  .invitation__cover-map::before {
+  .invitation__cover-map::after {
     top: 146px;
     left: 322px;
     width: 124px;
@@ -121,28 +122,34 @@
     box-sizing: border-box;
     margin: 0;
     padding-right: 10px;
-    width: 520px;
+    width: 570px;
     min-height: 200px;
     background-color: #ffffff;
 
     position: absolute;
     top: 93px;
-    left: 140px;
+    left: 110px;
 
     align-items: center;
+
+    z-index: 1;
   }
 
   .invitation__title,
   .invitation__address {
     width: 170px;
-    margin: 0 auto;
+  }
+
+  .invitation__title {
+    margin-left: 76px;
+    margin-right: 80px;
   }
 
   .invitation__address {
     text-align: left;
   }
 
-  .invitation__cover-map::before {
+  .invitation__cover-map::after {
     top: 148px;
     left: 997px;
   }

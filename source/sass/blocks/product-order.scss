@@ -1,10 +1,13 @@
 .product-order__price-list {
+  margin-bottom: 15px;
   @include font-options($arial, 14px, 14px);
   color: #444444;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .product-order__caption {
+  margin-bottom: 14px;
   @include font-options($oswald, 16px, 16px);
   color: #222222;
   text-align: left;
@@ -12,12 +15,19 @@
 }
 
 .product-order__tara {
+  padding: 0;
   text-align: left;
 }
 
 .product-order__price {
+  padding: 0;
   width: 20%;
   text-align: right;
+  text-transform: uppercase;
+}
+
+.product-order__button {
+  padding: 9px 0;
 }
 
 @media (min-width: $tablet-width) {

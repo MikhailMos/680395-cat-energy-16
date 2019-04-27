@@ -11,15 +11,19 @@
   border-bottom: 1px solid #ededed;
 }
 
-.page-main__additional-products,
-.page-main__profile {
-  outline: 1px dashed lighten(red, 30%); /*временно*/
-}
-
 .page-main__nutrition,
 .page-main__it-works,
+.page-main__additional-products,
 .page-main__profile {
   margin: 0 20px;
+}
+
+.page-main__catalog {
+  margin-bottom: 28px;
+}
+
+.page-main__additional-products {
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,10 +37,6 @@
 
   .page-main__nutrition {
     margin-bottom: 44px;
-  }
-
-  .page-main__example {
-    margin-bottom: 19px;
   }
 
   .page-main__profile,
