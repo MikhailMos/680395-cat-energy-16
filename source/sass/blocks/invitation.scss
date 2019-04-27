@@ -105,10 +105,10 @@
   }
 
   .invitation__cover-map::before {
-    top: 148px;
-    left: 326px;
-    width: 117px;
-    height: 117px;
+    top: 146px;
+    left: 322px;
+    width: 124px;
+    height: 124px;
   }
 }
 
@@ -118,14 +118,16 @@
   }
 
   .invitation__wrapper {
+    box-sizing: border-box;
     margin: 0;
+    padding-right: 10px;
     width: 520px;
     min-height: 200px;
     background-color: #ffffff;
 
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 93px;
+    left: 140px;
 
     align-items: center;
   }
@@ -138,6 +140,11 @@
 
   .invitation__address {
     text-align: left;
+  }
+
+  .invitation__cover-map::before {
+    top: 148px;
+    left: 997px;
   }
 
   .invitation__map {
