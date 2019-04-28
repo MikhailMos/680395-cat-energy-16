@@ -1,5 +1,5 @@
 .product-order__price-list {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   @include font-options($arial, 14px, 14px);
   color: #444444;
   width: 100%;
@@ -27,12 +27,15 @@
 }
 
 .product-order__button {
-  padding: 9px 0;
+  padding-top: 10px;
+  padding-bottom: 9px;
 }
 
 @media (min-width: $tablet-width) {
   .product-order__price-list {
     display: flex;
+    margin-top: 25px;
+    margin-bottom: 12px;
     width: 100%;
   }
 
@@ -53,7 +56,11 @@
   }
 
   .product-order__price {
-    width: 80px;
+    width: 95px;
+  }
+
+  .product-order__button {
+    margin-bottom: 28px;
   }
 }
 
@@ -62,16 +69,26 @@
     display: flex;
   }
 
+  .product-order__price-list {
+    margin-top: 24px;
+    margin-bottom: 13px;
+    align-items: center;
+  }
+
   .product-order__tara {
     width: 245px;
     text-align: left;
   }
 
   .product-order__price {
+    width: 80px;
     text-align: left;
   }
 
   .product-order__button {
-    width: 245px;
+    margin: auto 0;
+    margin-right: 3px;
+    padding-top: 11px;
+    width: 339px;
   }
 }

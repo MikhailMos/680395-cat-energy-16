@@ -72,22 +72,33 @@
       top: 83px;
       left: calc(50% - 30px);
     }
+
+    .show-products__all {
+      margin-bottom: 38px;
+    }
   }
 
   .show-products__title {
-    font-size: 20px;
     margin-bottom: 27px;
+    padding: 0 40px;
+    font-size: 20px;
   }
 
   .show-products__description {
+    margin-bottom: 85px;
+    padding: 0 20px;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 85px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .show-products {
     width: 245px;
+  }
+
+  .show-products__title,
+  .show-products__description {
+    padding: 0;
   }
 }

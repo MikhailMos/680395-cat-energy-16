@@ -31,7 +31,8 @@
   .page-main__it-works,
   .page-main__title,
   .page-main__catalog,
-  .page-main__profile {
+  .page-main__profile,
+  .page-main__additional-products {
     margin: 0 auto;
   }
 
@@ -40,8 +41,13 @@
   }
 
   .page-main__profile,
-  .page-main__catalog {
+  .page-main__catalog,
+  .page-main__additional-products {
     width: $tablet-width-block;
+  }
+
+  .page-main__additional-products {
+    margin-bottom: 77px;
   }
 
   .page-main__title {
@@ -54,8 +60,13 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title,
-  .page-main__profile {
+  .page-main__profile,
+  .page-main__additional-products {
     width: $desktop-width-block;
+  }
+
+  .page-main__additional-products {
+    margin-bottom: 20px;
   }
 
   .page-main__nutrition {

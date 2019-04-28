@@ -78,7 +78,7 @@
 
   .product__info {
     font-size: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 
   .product__field,
@@ -88,13 +88,21 @@
   }
 
   .product__order {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product {
     width: 245px;
+  }
+
+  .product__title {
+    margin-top: -8px;
+  }
+
+  .product__info {
+    margin-bottom: 34px;
   }
 
   .product__picture {
