@@ -14,6 +14,7 @@
 .range__before {
   margin-left: 5px;
   margin-right: 18px;
+  order: -1;
 }
 
 .range__scale {
@@ -75,8 +76,8 @@
     background-color: #dcdcdc;
 
     &:hover {
-      .range__before::before,
-      .range__after::before {
+      ~ .range__before::before,
+      ~ .range__after::before {
         border-bottom-style: solid;
         border-bottom-color: #989898;
       }
@@ -87,9 +88,9 @@
     }
 
     &:active {
-      .range__before::before,
-      .range__after::before {
-        display: none;
+      ~ .range__before::before,
+      ~ .range__after::before {
+        border-bottom-color: transparent;
       }
 
       .range__scale-current {

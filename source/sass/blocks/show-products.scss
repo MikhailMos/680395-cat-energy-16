@@ -10,7 +10,7 @@
 
     position: absolute;
     top: 40px;
-    left: 125px;
+    left: calc(50% - 30px/2); //125px;
 
     width: 30px;
     height: 2px;
