@@ -13,8 +13,7 @@
 
 .page-main__nutrition,
 .page-main__it-works,
-.page-main__additional-products,
-.page-main__profile {
+.page-main__additional-products {
   margin: 0 20px;
 }
 
@@ -24,6 +23,10 @@
 
 .page-main__additional-products {
   margin-bottom: 37px;
+}
+
+.page-main__profile {
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {

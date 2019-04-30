@@ -6,16 +6,44 @@
 }
 
 .personal-info__item {
+  margin-bottom: 14px;
   display: flex;
-}
+  align-items: center;
 
-.personal-info__label {
-  margin-right: 20px;
+  &:first-child .personal-info__label {
+    margin-right: 20px;
+  }
+
+  &:nth-child(2) .personal-info__label {
+    margin-right: 24px;
+  }
+
+  &:last-child .personal-info__label {
+    margin-right: 16px;
+  }
 }
 
 .personal-info__input {
+  padding: 12px 0 13px 13px;
+  @include font-options($oswald, 16px, 18px);
   color: #444444;
+  text-transform: uppercase;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   flex-grow: 1;
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    outline-offset: -1px;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -1px;
+  }
 }
 
 @media (min-width: $tablet-width) {

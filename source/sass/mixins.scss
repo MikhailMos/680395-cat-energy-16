@@ -9,3 +9,15 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin head-line($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    content: "";
+
+    border-bottom: 3px solid $green-color;
+
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

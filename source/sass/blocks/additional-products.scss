@@ -4,23 +4,8 @@
   @include font-options($oswald, 24px, 24px);
   color: #111111;
 
-  &::before,
   &::after {
-    content: "";
-
-    width: 53px;
-    border-bottom: 3px solid $green-color;
-
-    position: absolute;
-    top: 15px;
-  }
-
-  &::before {
-    display: none;
-  }
-
-  &::after {
-    left: 247px;
+    @include head-line(15px, -20px, auto, 247px);
   }
 }
 
@@ -85,20 +70,14 @@
     line-height: 36px;
     margin: 68px 0 80px 38px;
 
-    &::before,
+    &::before {
+      @include head-line(21px, 710px, auto, -67px);
+    }
+
     &::after {
       top: 21px;
-    }
-
-    &::before {
-      display: block;
-      width: 28px;
-      left: -67px;
-    }
-
-    &::after {
-      width: 327px;
-      left: 373px;
+      right: -29px;
+      left: 374px;
     }
   }
 
@@ -137,12 +116,12 @@
 
   .additional-products__title {
     &::before {
-      width: 70px;
+      right: 1259px;
       left: -109px;
     }
 
     &::after {
-      width: 956px;
+      right: -110px;
       left: 373px;
     }
   }

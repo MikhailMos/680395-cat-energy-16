@@ -1,9 +1,17 @@
+.profile__title,
+.profile__description {
+  margin: 0 20px;
+}
+
 .profile__title {
+  margin-bottom: 25px;
   @include font-options($oswald, 36px, 60px);
   color: #111111;
 }
 
 .profile__description {
+  margin-bottom: 40px;
+  padding-right: 10px;
   @include font-options($oswald, 14px, 18px);
   color: #111111;
   text-transform: uppercase;
@@ -25,11 +33,39 @@
   border: none;
   margin: 0;
   padding: 0;
-  outline: 1px dashed lighten(red, 30%); /*временно*/
+}
+
+.profile__personal-info,
+.profile__choice {
+  padding: 0 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.profile__personal-info {
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+}
+
+.profile__choice {
+  margin-bottom: 28px;
+  padding-bottom: 2px;
+}
+
+.profile__contacts {
+  margin-bottom: 13px;
 }
 
 .profile__comment {
+  margin: 0 20px;
+  margin-bottom: 23px;
+  padding: 0;
   color: #444444;
+}
+
+.profile__additionally{
+  margin: 0 20px;
+  margin-bottom: 17px;
+  padding: 0;
 }
 
 .profile__contacts,
@@ -38,16 +74,23 @@
   border: none;
 }
 
-.profile__small-legend {
-  @include font-options($arial, 14px, 16px);
-  color: #444444;
-  text-align: center;
+.profile__bottom-wrapper {
+  margin: 0 20px;
 }
 
 .profile__button {
   margin: 0;
-  padding: 0;
+  margin-bottom: 17px;
+  padding: 11px 0 10px 0;
   width: 100%;
+  border-style: none;
+}
+
+.profile__small-legend {
+  margin: 0;
+  @include font-options($arial, 14px, 16px);
+  color: #444444;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {

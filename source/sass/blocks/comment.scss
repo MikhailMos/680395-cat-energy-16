@@ -1,7 +1,16 @@
 .comment__legend {
+  margin-bottom: 34px;
+  padding: 0;
+  width: 280px;
   @include font-options($oswald, 24px, 24px);
   color: #111111;
   text-transform: none;
+
+  position: relative;
+
+  &::after {
+    @include head-line(13px, -20px, auto, 141px);
+  }
 }
 
 .comment__textarea {
@@ -9,8 +18,19 @@
   color: #444444;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 13px;
+  box-sizing: border-box;
   width: 100%;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    outline-offset: -1px;
+  }
 }
 
 @media (min-width: $tablet-width) {
