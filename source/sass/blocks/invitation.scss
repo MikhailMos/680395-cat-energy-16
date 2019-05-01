@@ -6,6 +6,12 @@
   background-color: $grey-color;
 }
 
+.invitation__title,
+.invitation__address {
+  margin: 0;
+  width: 140px;
+}
+
 .invitation__title {
   @include font-options($oswald, 16px, 20px);
   color: #111111;
@@ -16,16 +22,6 @@
 .invitation__address {
   @include font-options($arial, 14px, 20px);
   color: #444444;
-}
-
-.invitation__title,
-.invitation__address {
-  margin: 0;
-  width: 140px;
-}
-
-.invitation__title {
-  margin-right: auto;
 }
 
 .invitation__wrapper {

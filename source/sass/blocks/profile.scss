@@ -5,6 +5,7 @@
 
 .profile__title {
   margin-bottom: 25px;
+
   @include font-options($oswald, 36px, 60px);
   color: #111111;
 }
@@ -12,6 +13,7 @@
 .profile__description {
   margin-bottom: 40px;
   padding-right: 10px;
+
   @include font-options($oswald, 14px, 18px);
   color: #111111;
   text-transform: uppercase;
@@ -62,7 +64,7 @@
   color: #444444;
 }
 
-.profile__additionally{
+.profile__additionally {
   margin: 0 20px;
   margin-bottom: 17px;
   padding: 0;
@@ -88,6 +90,7 @@
 
 .profile__small-legend {
   margin: 0;
+
   @include font-options($arial, 14px, 16px);
   color: #444444;
   text-align: center;

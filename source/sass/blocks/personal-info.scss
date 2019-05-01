@@ -25,6 +25,7 @@
 
 .personal-info__input {
   padding: 12px 0 13px 13px;
+
   @include font-options($oswald, 16px, 18px);
   color: #444444;
   text-transform: uppercase;

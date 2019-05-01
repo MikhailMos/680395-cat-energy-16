@@ -1,6 +1,7 @@
 .additional-products__title {
   position: relative;
   margin-bottom: 35px;
+
   @include font-options($oswald, 24px, 24px);
   color: #111111;
 
@@ -33,6 +34,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 188px 55px 40px 54px;
+
   @include font-options($arial, 16px, 20px);
   color: #ffffff;
   text-align: center;
@@ -51,7 +53,7 @@
 
     position: absolute;
     top: 66px;
-    left: calc(50% - 56px/2);
+    left: calc(50% - 56px / 2);
 
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
@@ -98,7 +100,7 @@
     text-align: left;
 
     &::before {
-      left: calc(17% - 56px/2);
+      left: calc(17% - 56px / 2);
     }
   }
 }
@@ -107,14 +109,7 @@
   .additional-products__title {
     margin-top: 76px;
     margin-left: 0;
-  }
 
-  .additional-products__wrapper {
-    display: flex;
-    width: $desktop-width-block;
-  }
-
-  .additional-products__title {
     &::before {
       right: 1259px;
       left: -109px;
@@ -124,6 +119,11 @@
       right: -110px;
       left: 373px;
     }
+  }
+
+  .additional-products__wrapper {
+    display: flex;
+    width: $desktop-width-block;
   }
 
   .additional-products__list {
@@ -147,7 +147,7 @@
     text-align: center;
 
     &::before {
-      left: calc(50% - 56px/2);
+      left: calc(50% - 56px / 2);
     }
   }
 }

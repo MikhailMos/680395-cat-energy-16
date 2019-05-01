@@ -1,5 +1,6 @@
 .product-order__price-list {
   margin-bottom: 14px;
+
   @include font-options($arial, 14px, 14px);
   color: #444444;
   width: 100%;
@@ -8,6 +9,7 @@
 
 .product-order__caption {
   margin-bottom: 14px;
+
   @include font-options($oswald, 16px, 16px);
   color: #222222;
   text-align: left;
