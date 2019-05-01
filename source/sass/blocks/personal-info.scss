@@ -28,26 +28,47 @@
   @include font-options($oswald, 16px, 18px);
   color: #444444;
   text-transform: uppercase;
-  border: 1px solid rgba(205, 205, 205, 0.5);
+  border: 1px solid $border-color;
   flex-grow: 1;
 
   &:hover {
-    border-color: rgba(205, 205, 205, 1);
+    border-color: $hvr-color;
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    outline: 2px solid $active-color;
     outline-offset: -1px;
   }
 
   &:invalid {
-    outline: 2px solid #ff8282;
+    outline: 2px solid $err-color;
     outline-offset: -1px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .personal-info {
+    padding-left: 2px;
+  }
+
+  .personal-info__item {
+    margin-bottom: 19px;
+
+    &:first-child .personal-info__label {
+      margin-right: 25px;
+    }
+
+    &:nth-child(2) .personal-info__label {
+      margin-right: 28px;
+    }
+
+    &:last-child .personal-info__label {
+      margin-right: 17px;
+    }
+  }
+
   .personal-info__input {
+    padding: 10px 0 11px 17px;
     font-size: 20px;
     line-height: 20px;
   }

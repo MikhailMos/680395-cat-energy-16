@@ -35,11 +35,24 @@
 
 @media (min-width: $tablet-width) {
   .comment__legend {
+    margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      @include head-line(22px, 319px, auto, -110px);
+    }
+
+    &::after {
+      top: 22px;
+      right: -419px;
+      left: 220px;
+    }
   }
 
   .comment__textarea {
+    padding: 9px 20px;
+    height: 174px;
     font-size: 20px;
     line-height: 30px;
   }

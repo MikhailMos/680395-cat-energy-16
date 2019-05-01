@@ -95,14 +95,16 @@
 
 @media (min-width: $tablet-width) {
   .profile__title {
+    margin: 50px 0 55px 0;
     font-size: 60px;
   }
 
   .profile__description {
+    margin-left: 40px;
+    margin-bottom: 65px;
+    width: 345px;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 40px;
-    width: 345px;
   }
 
   .profile__personal-info,
@@ -118,18 +120,40 @@
     width: $tablet-width-block;
   }
 
+  .profile__personal-info {
+    margin-bottom: 53px;
+    border-bottom: none;
+  }
+
+  .profile__choice {
+    margin-bottom: 75px;
+    border-bottom: none;
+  }
+
+  .profile__contacts {
+    margin-bottom: 45px;
+  }
+
   .profile__comment {
+    margin-bottom: 60px;
     line-height: 30px;
   }
 
+  .profile__additionally {
+    margin-bottom: 13px;
+  }
+
   .profile__button {
+    margin-right: 60px;
+    padding: 15px 0 17px 0;
+    width: 285px;
     font-size: 20px;
     line-height: 20px;
-    margin-right: 60px;
-    width: 285px;
   }
 
   .profile__small-legend {
+    padding-top: 11px;
+    padding-left: 2px;
     font-size: 16px;
   }
 

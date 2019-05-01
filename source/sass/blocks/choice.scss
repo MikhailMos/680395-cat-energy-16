@@ -63,3 +63,32 @@
 .choice__label::after {
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .choice {
+    padding: 33px 0 2px 88px;
+    border: 1px solid $border-color;
+  }
+
+  .choice__item {
+    margin-bottom: 33px;
+  }
+
+  .choice__label {
+    &::before {
+      width: 40px;
+      height: 40px;
+
+      top: -8px;
+      left: -59px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+
+      top: 2px;
+      left: -47px;
+    }
+  }
+}

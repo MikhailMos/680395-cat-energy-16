@@ -85,13 +85,60 @@
 
 @media (min-width: $tablet-width) {
   .contacts__legend {
+    margin: 0;
+    margin-bottom: 76px;
+    width: 100%;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      @include head-line(22px, 669px, auto, -68px);
+    }
+
+    &::after {
+      top: 22px;
+      right: -68px;
+      left: 554px;
+    }
   }
 
+  .contacts__list {
+    margin: 0;
+    margin-right: -3px;
+  }
+
+  .contacts__item {
+    margin-bottom: 19px;
+  }
+
+  .contacts__label,
   .contacts__input {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .contacts__label {
+    margin-right: 29px;
+
+    &:nth-child(2) {
+      margin-right: 22px;
+    }
+  }
+
+  .contacts__input {
+    padding: 10px 35px 11px 20px;
+  }
+
+  .contacts__icon {
+    &--email {
+      top: 20px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 17px;
+    }
   }
 }
 
