@@ -164,6 +164,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .profile__title {
+    margin-top: 67px;
+  }
+
   .profile__personal-info,
   .profile__choice,
   .profile__contacts,
@@ -177,8 +181,9 @@
   }
 
   .profile__wrapper-main {
+    margin-bottom: 50px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .profile__personal-info,
@@ -194,6 +199,18 @@
 
   .profile__description {
     margin-left: 0;
+  }
+
+  .profile__contacts {
+    margin-bottom: 47px;
+  }
+
+  .profile__comment {
+    margin-bottom: 62px;
+  }
+
+  .profile__additionally {
+    margin-bottom: 20px;
   }
 
   .profile__bottom-wrapper {

@@ -92,7 +92,7 @@
     line-height: 36px;
 
     &::before {
-      @include head-line(22px, 669px, auto, -68px);
+      @include head-line(22px, 669px, auto, -110px);
     }
 
     &::after {
@@ -119,10 +119,10 @@
 
   .contacts__label {
     margin-right: 29px;
+  }
 
-    &:nth-child(2) {
-      margin-right: 22px;
-    }
+  .contacts__item:nth-child(2) .contacts__label {
+    margin-right: 22px;
   }
 
   .contacts__input {
@@ -143,7 +143,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__legend {
+    &::before {
+      right: 1260px;
+    }
+
+    &::after {
+      right: -110px;
+    }
+  }
+
   .contacts__list {
+    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
   }

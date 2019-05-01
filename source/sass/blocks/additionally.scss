@@ -130,3 +130,22 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additionally__legend::after {
+    right: -1050px;
+  }
+
+  .additionally__item {
+    margin-right: 80px;
+    width: 245px;
+
+    &:nth-child(2n) {
+      margin-right: 79px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
