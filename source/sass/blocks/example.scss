@@ -88,6 +88,7 @@
 }
 
 .example__slaid {
+  box-sizing: border-box;
   margin: 0 auto;
   margin-top: 20px;
   position: relative;
@@ -111,9 +112,10 @@
 @media (min-width: $tablet-width) {
   .example {
     margin-top: 0;
-    padding-bottom: 78px;
+    // padding-bottom: 78px;
     border-top: 1px solid #e6e6e6;
-    background: linear-gradient(to bottom, transparent 620px, $grey-color 620px);
+    background-color: transparent;
+    // background: linear-gradient(to bottom, transparent 620px, $grey-color 620px);
   }
 
   .example__title {
@@ -128,10 +130,20 @@
     padding-right: 10px;
   }
 
+  .example__wrapper-slaid {
+    box-sizing: border-box;
+    padding-bottom: 75px;
+    background: linear-gradient(to left, #eaeaea 50%, $grey-color 50%);
+  }
+
   .example__wrapper,
   .example__slaid {
     margin: 0 auto;
     width: $tablet-width-block;
+  }
+
+  .example__wrapper {
+    margin-bottom: 237px;
   }
 
   .example__wrapper-list-p {
@@ -195,9 +207,9 @@
 
   .example__image-cover {
     position: absolute;
-    top: 0;
+    top: -170px;
     left: 0;
-    height: 100%;
+    height: 130%;
     width: 50%;
     overflow: hidden;
     transform: translateZ(0);
@@ -211,27 +223,33 @@
   }
 
   .example__image-after {
-    display: block;
+    display: inline-block;
+    margin-top: -170px;
     width: 720px;
     height: 517px;
   }
 
   .example__paragraph-range {
-    margin-top: 18px;
+    margin-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: 54px;
-    background: linear-gradient(to bottom, transparent 28%, #f2f2f2 28%);
+    padding: 17px 110px 55px 110px;
+    background: linear-gradient(to left, #eaeaea 395px, #f2f2f2 395px);
     border-top: none;
+
+    display: flex;
+    justify-content: flex-start;
   }
 
   .example__wrapper {
-    width: $desktop-width-block;
-    display: flex;
-    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .example__article {
+    margin-top: -180px;
   }
 
   .example__destination {
@@ -271,12 +289,23 @@
     width: 668px;
   }
 
+  .example__wrapper-slaid {
+    margin-left: auto;
+    padding-bottom: 0;
+    background: transparent;
+  }
+
   .example__image-cover {
     width: 383px;
+    top: -180px;
+  }
+
+  .example__image-after {
+    margin-top: -180px;
   }
 
   .example__paragraph-range {
-    margin-top: 37px;
+    margin-top: 33px;
     margin-right: 0;
     margin-left: auto;
   }
