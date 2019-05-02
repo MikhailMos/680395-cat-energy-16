@@ -31,13 +31,10 @@
   }
 
   .logo__image {
-    margin-left: 0;
-    padding-left: 200px;
+    margin-left: -8px;
     width: 190px;
     height: 58px;
     box-sizing: border-box;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
   }
 
   .logo--footer {
@@ -50,8 +47,8 @@
 
 @media (min-width: $desktop-width) {
   .logo__image {
+    margin-left: 0;
     width: 202px;
     height: 60px;
-    background-image: url("../img/logo-desktop.svg");
   }
 }

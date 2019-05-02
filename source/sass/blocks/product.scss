@@ -34,6 +34,7 @@
 
 .product__picture {
   margin-right: auto;
+  height: 144px;
   order: -1;
 }
 
@@ -52,18 +53,22 @@
   }
 
   .product__picture {
-    width: 250px; // временно
-    height: 282px;
-    margin: 0 auto;
-    margin-top: -110px;
+    margin: -45px auto 43px -38px;
+    height: auto;
+  }
+
+  .product__picture-img {
+    width: 323px;
+    height: 171px;
   }
 
   .product__picture--big {
-    margin-top: -130px;
-    margin-bottom: 20px;
+    margin-top: -37px;
+    height: auto;
   }
 
   .product__wrapper {
+    margin-bottom: -1px;
     width: 100%;
   }
 
@@ -98,7 +103,7 @@
   }
 
   .product__title {
-    margin-top: -8px;
+    margin-top: -10px;
   }
 
   .product__info {
@@ -106,6 +111,14 @@
   }
 
   .product__picture {
-    width: 170px; // временно
+    margin-left: -36px;
+  }
+
+  .product__picture-img {
+    width: 240px;
+  }
+
+  .product__picture--big {
+    height: 210px;
   }
 }
