@@ -1,10 +1,21 @@
 .promo {
+  position: relative;
   padding-top: 26px;
   width: 100%;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 306px;
-  background-position: top center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 306px;
+    background-color: $green-color;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 306px;
+    background-position: top center;
+    z-index: -1;
+  }
 }
 
 .promo__title {
@@ -40,8 +51,7 @@
   line-height: 18px;
   text-align: center;
   margin: 0 20px;
-  padding: 12px;
-  padding-bottom: 10px;
+  padding: 11px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,8 +59,12 @@
     position: relative;
     padding-top: 0;
     width: $tablet-width-block;
-    min-height: 808px;
+    min-height: 810px;
     background-image: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   .promo__title,

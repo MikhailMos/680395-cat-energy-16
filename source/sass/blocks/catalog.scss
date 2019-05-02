@@ -23,8 +23,7 @@
   .catalog__item {
     display: flex;
     margin-right: auto;
-    margin-bottom: 139px;
-    border: 1px solid #ededed;
+    margin-bottom: 140px;
     background-color: $grey-color;
 
     &:nth-child(2n) {
@@ -36,6 +35,7 @@
     }
 
     &:last-child {
+      border: 1px solid #ededed;
       background-color: transparent;
     }
   }
@@ -52,6 +52,7 @@
   }
 
   .catalog__item {
+    margin-bottom: 142px;
     min-width: 245px;
     flex-grow: 0;
 

@@ -27,8 +27,8 @@
   .page-footer__wrapper {
     flex-direction: row;
     margin: 0 auto;
-    padding-top: 57px;
-    padding-bottom: 50px;
+    padding-top: 55px;
+    padding-bottom: 54px;
     width: $tablet-width-block;
   }
 
@@ -46,7 +46,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 52px;
     width: $desktop-width-block;
   }
 

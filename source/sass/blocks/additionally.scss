@@ -1,36 +1,152 @@
 .additionally__legend {
+  margin-bottom: 40px;
+  padding: 0;
+  width: 280px;
+
   @include font-options($oswald, 24px, 24px);
   color: #111111;
   text-transform: none;
+
+  position: relative;
+
+  &::after {
+    @include head-line(13px, -20px, auto, 165px);
+  }
 }
 
 .additionally__list {
   @include list-reset();
+  padding-left: 46px;
+}
+
+.additionally__item {
+  margin-bottom: 24px;
+  position: relative;
 }
 
 .additionally__label {
   @include font-options($oswald, 16px, 18px);
   color: #222222;
   text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    width: 30px;
+    height: 30px;
+
+    top: -5px;
+    left: -47px;
+
+    border: 1px solid #cdcdcd;
+  }
+
+  &::after {
+    display: none;
+    width: 22px;
+    height: 16px;
+
+    background: url("../img/icon-tick.svg") no-repeat;
+
+    top: 2px;
+    left: -41px;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.additionally__label,
+.additionally__label::before {
+  cursor: pointer;
+}
+
+.additionally__input:checked + .additionally__label::after {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .additionally__legend {
+    margin-bottom: 65px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      @include head-line(21px, 319px, auto, -110px);
+    }
+
+    &::after {
+      top: 21px;
+      right: -419px;
+      left: 252px;
+    }
   }
 
   .additionally__list {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
   .additionally__item {
-    width: 285px;
+    box-sizing: border-box;
+    margin-right: 79px;
+    margin-bottom: 52px;
+    padding-left: 60px;
+    width: 265px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .additionally__label {
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+
+      top: -9px;
+      left: 0;
+    }
+
+    &::after {
+      left: 11px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__legend::after {
+    right: -1050px;
+  }
+
+  .additionally__item {
+    margin-right: 80px;
+    width: 245px;
+
+    &:nth-child(2n) {
+      margin-right: 79px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }

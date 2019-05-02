@@ -6,20 +6,70 @@
 }
 
 .personal-info__item {
+  margin-bottom: 14px;
   display: flex;
-}
+  align-items: center;
 
-.personal-info__label {
-  margin-right: 20px;
+  &:first-child .personal-info__label {
+    margin-right: 20px;
+  }
+
+  &:nth-child(2) .personal-info__label {
+    margin-right: 24px;
+  }
+
+  &:last-child .personal-info__label {
+    margin-right: 16px;
+  }
 }
 
 .personal-info__input {
+  padding: 12px 0 13px 13px;
+
+  @include font-options($oswald, 16px, 18px);
   color: #444444;
+  text-transform: uppercase;
+  border: 1px solid $border-color;
   flex-grow: 1;
+
+  &:hover {
+    border-color: $hvr-color;
+  }
+
+  &:focus {
+    outline: 2px solid $active-color;
+    outline-offset: -1px;
+  }
+
+  &:invalid {
+    outline: 2px solid $err-color;
+    outline-offset: -1px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .personal-info {
+    padding-left: 2px;
+  }
+
+  .personal-info__item {
+    margin-bottom: 19px;
+
+    &:first-child .personal-info__label {
+      margin-right: 25px;
+    }
+
+    &:nth-child(2) .personal-info__label {
+      margin-right: 28px;
+    }
+
+    &:last-child .personal-info__label {
+      margin-right: 17px;
+    }
+  }
+
   .personal-info__input {
+    padding: 10px 0 11px 17px;
     font-size: 20px;
     line-height: 20px;
   }
