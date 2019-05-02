@@ -69,7 +69,7 @@
 
   &--down {
     position: absolute;
-    left: calc(50% - 44px);
+    left: calc(50% - 42px);
     bottom: -14px;
     text-transform: lowercase;
   }
@@ -102,7 +102,7 @@
 .example__image {
   display: block;
   margin: 0 auto;
-  margin-left: -22px;
+  margin-left: -12px;
 
   &-after {
     display: none;
@@ -112,10 +112,8 @@
 @media (min-width: $tablet-width) {
   .example {
     margin-top: 0;
-    // padding-bottom: 78px;
     border-top: 1px solid #e6e6e6;
     background-color: transparent;
-    // background: linear-gradient(to bottom, transparent 620px, $grey-color 620px);
   }
 
   .example__title {
@@ -211,6 +209,7 @@
     left: 0;
     height: 130%;
     width: 50%;
+    background: linear-gradient(to bottom, #ffffff 170px, $grey-color 170px);
     overflow: hidden;
     transform: translateZ(0);
     backface-visibility: hidden;
@@ -236,10 +235,18 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding: 17px 110px 55px 110px;
-    background: linear-gradient(to left, #eaeaea 395px, #f2f2f2 395px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 17px;
+    padding-bottom: 55px;
+    max-width: 1440px;
+    background: linear-gradient(to left, #eaeaea 27.5%, #f2f2f2 27.5%);
     border-top: none;
+  }
 
+  .example__width-block {
+    margin: 0 auto;
+    width: $desktop-width-block;
     display: flex;
     justify-content: flex-start;
   }
@@ -297,6 +304,7 @@
 
   .example__image-cover {
     width: 383px;
+    background: linear-gradient(to bottom, #ffffff 188px, $grey-color 190px);
     top: -180px;
   }
 
