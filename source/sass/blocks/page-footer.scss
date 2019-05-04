@@ -21,6 +21,7 @@
   width: 100%;
 
   background-color: $grey-color;
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,14 +34,16 @@
   }
 
   .page-footer__logo {
-    margin-left: 2px;
-    margin-right: 155px;
+    margin-left: -4px;
+    margin-right: 148px;
   }
 
   .page-footer__copyright {
     margin-left: auto;
     padding: 0;
+    width: auto;
     align-self: center;
+    border-top: none;
   }
 }
 
@@ -56,8 +59,8 @@
   }
 
   .page-footer__logo {
-    margin-right: 57px;
-    margin-left: 0;
+    margin-right: 135px;
+    margin-left: -5px;
   }
 
   .page-footer__copyright {

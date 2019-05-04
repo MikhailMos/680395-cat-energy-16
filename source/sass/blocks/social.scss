@@ -1,65 +1,67 @@
 .social {
+  box-sizing: border-box;
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 18px;
-  width: 100%;
+  padding: 23px 0 15px 0;
+  // width: 100%;
 
-  border-bottom: 1px solid #d9d9d9;
+  // border-bottom: 1px solid #d9d9d9;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .social__item {
-  margin-right: 30px;
+  margin-right: 33px;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.social__link {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+  height: 24px;
 
   &:hover .social__svg,
-  &:active .social__svg {
+  &:active .social__svg,
+  &:focus .social__svg {
     fill: $green-color;
   }
 
   &:active .social__svg {
     fill-opacity: 0.3;
   }
-}
 
-.social__link {
-  display: block;
-  width: 24px;
-  height: 24px;
+  // text-align: center;
 
-  text-align: center;
+  // &--vkontakte .social__svg {
+  //   width: 23px;
+  //   // height: 12px;
+  // }
 
-  &--vkontakte .social__svg {
-    width: 23px;
-    // height: 12px;
-  }
+  // &--instagram .social__svg {
+  //   width: 16px;
+  //   // height: 16px;
+  // }
 
-  &--instagram .social__svg {
-    width: 16px;
-    // height: 16px;
-  }
-
-  &--facebook .social__svg {
-    width: 10px;
-    // height: 19px;
-  }
+  // &--facebook .social__svg {
+  //   width: 10px;
+  //   // height: 19px;
+  // }
 }
 
 .social__svg {
-  height: 24px;
+  // height: 24px;
   fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
+    width: auto;
     height: 30px;
     border-bottom: none;
 
@@ -74,26 +76,34 @@
     }
   }
 
+  .social__svg {
+    width: 30px;
+  }
+
   .social__link {
     width: 30px;
+    height: 30px;
 
-    &--vkontakte .social__svg {
-      width: 30px;
+    &--vkontakte {
+      padding-top: 3px;
+
+      .social__svg {
+        height: 20px;
+      }
     }
 
     &--instagram .social__svg {
-      width: 23px;
+      height: 23px;
     }
 
     &--facebook .social__svg {
-      width: 15px;
-      height: 28px;
+      height: 25px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .social {
-    justify-content: center;
+    margin-left: auto;
   }
 }
