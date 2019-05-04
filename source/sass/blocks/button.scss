@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 0 35px 0;
+  padding: 18px 0 20px 0;
 
   &:hover,
   &:focus,
@@ -40,9 +40,10 @@
   }
 }
 
-.button__fotter-span {
-  text-transform: none;
-  flex-grow: 1;
+.button__footer-span {
+  margin-left: -2px;
+  // text-transform: none;
+  // flex-grow: 1;
 }
 
 .button__footer-svg {
