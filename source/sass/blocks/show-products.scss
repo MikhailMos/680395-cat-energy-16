@@ -50,6 +50,7 @@
   background-color: $grey-color;
 
   &:hover,
+  &:focus,
   &:active {
     background-color: #ebebeb;
   }
