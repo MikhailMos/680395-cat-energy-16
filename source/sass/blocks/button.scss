@@ -9,6 +9,7 @@
   background-color: $green-color;
 
   &:hover,
+  &:focus,
   &:active {
     background-color: #5eaa2f;
   }
@@ -42,11 +43,10 @@
 
 .button__footer-span {
   margin-left: -2px;
-  // text-transform: none;
-  // flex-grow: 1;
 }
 
 .button__footer-svg {
+  margin-right: -6px;
   fill: #666666;
 }
 
@@ -56,7 +56,7 @@
   }
 
   .button__footer-svg {
-    margin-left: 10px;
+    margin-left: 15px;
     width: 40px;
   }
 }

@@ -110,11 +110,12 @@
   }
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::before {
       content: "";
-      right: -40px;
       width: 26px;
+      right: -40px;
     }
 
     &::after {
@@ -198,6 +199,17 @@
     &::after {
       top: 9px;
       right: -55px;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        right: -51px;
+      }
+
+      &::after {
+        right: -65px;
+      }
     }
   }
 }
