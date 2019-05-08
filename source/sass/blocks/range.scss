@@ -26,6 +26,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .range__scale-current {
@@ -36,6 +37,7 @@
   position: absolute;
   left: 5px;
   top: 4px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
