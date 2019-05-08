@@ -56,8 +56,8 @@ gulp.task("refresh", function (done) {
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -65,7 +65,7 @@ gulp.task("images", function () {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png, jpg}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -93,11 +93,11 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
-      "source/js/**",
-      "source/*.ico"
-    ], {
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+  ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
@@ -105,9 +105,12 @@ gulp.task("copy", function () {
 
 gulp.task("compress", function () {
   return pipeline(
-        gulp.src("build/js/**/*.js"),
-        uglify(),
-        gulp.dest("build/js")
+    gulp.src("build/js/**/*.js"),
+    uglify(),
+    rename(function (path) {
+      path.basename += ".min";
+    }),
+    gulp.dest("build/js")
   );
 });
 
