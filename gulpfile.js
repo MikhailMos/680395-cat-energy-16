@@ -105,11 +105,9 @@ gulp.task("copy", function () {
 
 gulp.task("compress", function () {
   return pipeline(
-    gulp.src("build/js/**/*.js"),
+    gulp.src("build/js/main-nav.js"),
     uglify(),
-    rename(function (path) {
-      path.basename += ".min";
-    }),
+    rename("main-nav.min.js"),
     gulp.dest("build/js")
   );
 });
