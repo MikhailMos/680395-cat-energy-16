@@ -6,7 +6,7 @@
   color: #111111;
 
   &::after {
-    @include head-line(15px, -20px, auto, 247px);
+    @include head-line(15px, -19px, auto, 247px);
   }
 }
 
@@ -42,12 +42,13 @@
 
   background-color: $green-color;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
-    background-size: cover;
+    background-size: contain;
   }
 
   &::before {
@@ -78,12 +79,12 @@
     margin: 68px 0 80px 38px;
 
     &::before {
-      @include head-line(21px, 710px, auto, -110px);
+      @include head-line(21px, 710px, auto, -65px);
     }
 
     &::after {
       top: 21px;
-      right: -29px;
+      right: -4%;
       left: 374px;
     }
   }
@@ -127,7 +128,7 @@
     }
 
     &::after {
-      right: -110px;
+      right: -109px;
       left: 373px;
     }
   }

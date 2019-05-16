@@ -68,7 +68,7 @@
       padding-top: 3px;
 
       .social__svg {
-        height: 20px;
+        height: 15px;
       }
     }
 
@@ -77,7 +77,8 @@
     }
 
     &--facebook .social__svg {
-      height: 25px;
+      margin-top: -4px;
+      height: 28px;
     }
   }
 }

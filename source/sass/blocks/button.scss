@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 0 20px 0;
+  padding: 18px 0 26px 0;
 
   &:hover,
   &:focus,
@@ -58,5 +58,15 @@
   .button__footer-svg {
     margin-left: 15px;
     width: 40px;
+  }
+
+  .button__footer-span {
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button__footer-span {
+    margin-top: 0;
   }
 }

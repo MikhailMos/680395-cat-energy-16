@@ -41,11 +41,13 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: $desktop-width-block;
+    width: 100%;
+    flex-direction: column;
   }
 
   .page-header__wrapper {
     margin-top: 48px;
+    width: $desktop-width-block;
   }
 
   .page-header__promo {

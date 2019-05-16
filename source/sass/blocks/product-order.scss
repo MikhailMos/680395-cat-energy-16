@@ -42,13 +42,15 @@
   }
 
   .product-order__caption {
+    margin-right: auto;
+    margin-left: 1px;
     font-size: 20px;
     line-height: 20px;
-    margin-right: auto;
   }
 
   .product-order__tara,
   .product-order__price {
+    padding-top: 3px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -77,14 +79,18 @@
     align-items: center;
   }
 
+  .product-order__tara,
+  .product-order__price {
+    padding-top: 0;
+    text-align: left;
+  }
+
   .product-order__tara {
     width: 245px;
-    text-align: left;
   }
 
   .product-order__price {
     width: 80px;
-    text-align: left;
   }
 
   .product-order__button {
